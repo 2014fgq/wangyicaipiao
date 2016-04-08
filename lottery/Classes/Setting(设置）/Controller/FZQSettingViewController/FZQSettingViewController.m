@@ -61,86 +61,43 @@
 /* 设置第0组数据 */
 - (void)setGroup0
 {
-    //创建行模型
-    FZQArrowItem *settingItem0 = [[FZQArrowItem alloc]init];
-    
-    //设置行模型数据
-    settingItem0.icon = [UIImage imageNamed:@"RedeemCode"];
-    settingItem0.title = @"使用兑换码";
-    settingItem0.skipController = [FZQRedeemCodeViewController class];
-    
-    //创建组模型
-    FZQGroupItem *group0 = [[FZQGroupItem alloc]init];
-
-    //把行模型加入到组模型settingItems数组中
-    [group0.items addObject:settingItem0];
+    NSArray *_array = @[@{@"class":[FZQArrowItem class], @"icon":[UIImage imageNamed:@"RedeemCode"],
+                          @"title":@"使用兑换码", @"skipController":[FZQRedeemCodeViewController class]},
+                        ];
     
     //加入到数据组中
-    [self.groups addObject:group0];
+    [self.groups addObject:[self setupChildViewWithArray:_array]];
 }
 /* 设置第1组数据 */
 - (void)setGroup1
 {
-    //创建行模型
-    FZQArrowItem *settingItem0 = [[FZQArrowItem alloc]init];
-    settingItem0.icon = [UIImage imageNamed:@"MorePush"];
-    settingItem0.title = @"推送和提醒";
-    settingItem0.skipController = [FZQMorePushViewController class];
-    
-    
-    FZQBaseItem *settingItem1 = [[FZQSwitchItem alloc]init];
-    settingItem1.icon = [UIImage imageNamed:@"handShake"];
-    settingItem1.title = @"使用摇一摇机选";
-    
-    FZQBaseItem *settingItem2 = [[FZQSwitchItem alloc]init];
-    settingItem2.icon = [UIImage imageNamed:@"sound_Effect"];
-    settingItem2.title = @"声音效果";
-    
-    FZQBaseItem *settingItem3 = [[FZQSwitchItem alloc]init];
-    settingItem3.icon = [UIImage imageNamed:@"More_LotteryRecommend"];
-    settingItem3.title = @"购彩小助手";
-        
-    //创建组模型
-    FZQGroupItem *group1 = [[FZQGroupItem alloc]init];
-    
-    //把行模型加入到组模型settingItems数组中
-    [group1.items addObjectsFromArray:@[settingItem0,settingItem1,settingItem2,settingItem3]];
+    NSArray *_array = @[@{@"class":[FZQArrowItem class], @"icon":[UIImage imageNamed:@"MorePush"],
+                          @"title":@"推送和提醒", @"skipController":[FZQMorePushViewController class]},
+                        @{@"class":[FZQSwitchItem class], @"icon":[UIImage imageNamed:@"handShake"],
+                          @"title":@"使用摇一摇机选"},
+                        @{@"class":[FZQSwitchItem class], @"icon":[UIImage imageNamed:@"sound_Effect"],
+                          @"title":@"声音效果"},
+                        @{@"class":[FZQSwitchItem class], @"icon":[UIImage imageNamed:@"More_LotteryRecommend"],
+                          @"title":@"购彩小助手"},
+                        ];
     
     //加入到数据组中
-    [self.groups addObject:group1];
+    [self.groups addObject:[self setupChildViewWithArray:_array]];
 }
 /* 设置第2组数据 */
 - (void)setGroup2
 {
-    //创建行模型
-    FZQArrowItem *settingItem0 = [[FZQArrowItem alloc]init];
-    settingItem0.icon = [UIImage imageNamed:@"MoreUpdate"];
-    settingItem0.title = @"检查新版本";
-    settingItem0.skipController = [FZQMorePushViewController class];
-    
-    FZQArrowItem *settingItem1 = [[FZQArrowItem alloc]init];
-    settingItem1.icon = [UIImage imageNamed:@"MoreShare"];
-    settingItem1.title = @"分享";
-    settingItem0.skipController = [FZQMorePushViewController class];
-    
-    FZQArrowItem *settingItem2 = [[FZQArrowItem alloc]init];
-    settingItem2.icon = [UIImage imageNamed:@"MoreNetease"];
-    settingItem2.title = @"产品推荐";
-    settingItem0.skipController = [FZQMorePushViewController class];
-    
-    FZQArrowItem *settingItem3 = [[FZQArrowItem alloc]init];
-    settingItem3.icon = [UIImage imageNamed:@"MoreAbout"];
-    settingItem3.title = @"关于";
-    settingItem0.skipController = [FZQMorePushViewController class];
-    
-    //创建组模型
-    FZQGroupItem *group2 = [[FZQGroupItem alloc]init];
-    
-    //把行模型加入到组模型settingItems数组中
-    [group2.items addObjectsFromArray:@[settingItem0,settingItem1,settingItem2,settingItem3]];
-    
+    NSArray *_array = @[@{@"class":[FZQArrowItem class], @"icon":[UIImage imageNamed:@"MoreUpdate"],
+                          @"title":@"检查新版本", @"skipController":[FZQMorePushViewController class]},
+                        @{@"class":[FZQArrowItem class], @"icon":[UIImage imageNamed:@"MoreShare"],
+                          @"title":@"分享",      @"skipController":[FZQMorePushViewController class]},
+                        @{@"class":[FZQArrowItem class], @"icon":[UIImage imageNamed:@"MoreNetease"],
+                          @"title":@"产品推荐",   @"skipController":[FZQMorePushViewController class]},
+                        @{@"class":[FZQArrowItem class], @"icon":[UIImage imageNamed:@"MoreAbout"],
+                          @"title":@"关于",      @"skipController":[FZQMorePushViewController class]},
+                        ];
     //加入到数据组中
-    [self.groups addObject:group2];
+    [self.groups addObject:[self setupChildViewWithArray:_array]];
 }
 
 @end

@@ -23,5 +23,6 @@
 
 /* 设置所有数据 */
 - (void)setAllGroups;
-
+- (FZQGroupItem *)setupChildViewWithArray:(NSArray *)array;
+- (FZQBaseItem *)setupChildViewWithDict:(NSDictionary *)dict;
 @end

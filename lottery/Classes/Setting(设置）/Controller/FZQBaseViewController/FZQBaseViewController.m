@@ -129,7 +129,27 @@
     return group.footerTitle;
 }
 
+- (FZQGroupItem *)setupChildViewWithArray:(NSArray *)array
+{
+    //创建组模型
+    FZQGroupItem *group = [[FZQGroupItem alloc]init];
+    
+    //把行模型加入到组模型settingItems数组中
+    for (NSDictionary *dict in array) {
+        FZQBaseItem *baseItem = [self setupChildViewWithDict:dict];
+        [group.items addObject:baseItem];
+    }
+    return group;
+}
 
+#define DICT(KEY) \
+[dict valueForKey:@#KEY]
 
+- (FZQBaseItem *)setupChildViewWithDict:(NSDictionary *)dict
+{
+    FZQBaseItem * baseItem = [[DICT(class) alloc] init];
+    [baseItem setValuesForKeysWithDictionary:dict];
+    return baseItem;
+}
 
 @end
