@@ -7,14 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		889A80991CA8F38A0029A97D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A80981CA8F38A0029A97D /* main.m */; };
-		889A809C1CA8F38A0029A97D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A809B1CA8F38A0029A97D /* AppDelegate.m */; };
-		889A809F1CA8F38A0029A97D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A809E1CA8F38A0029A97D /* ViewController.m */; };
-		889A80A21CA8F38A0029A97D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889A80A01CA8F38A0029A97D /* Main.storyboard */; };
+		8813E9A91CB6C8AB003E85A4 /* FZQBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8813E9A81CB6C8AB003E85A4 /* FZQBaseCell.m */; };
+		882B293A1CB571720046A903 /* FZQOwl.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B292F1CB571720046A903 /* FZQOwl.m */; };
+		882B293B1CB571720046A903 /* FZQOwl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882B29301CB571720046A903 /* FZQOwl.xib */; };
+		882B293C1CB571720046A903 /* FZQSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B29331CB571720046A903 /* FZQSwitchView.m */; };
+		882B293D1CB571720046A903 /* FZQSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882B29341CB571720046A903 /* FZQSwitchView.xib */; };
+		882B298A1CB579F70046A903 /* FZQLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B29261CB571720046A903 /* FZQLoginViewController.m */; };
+		882B298B1CB57A060046A903 /* FZQLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B292C1CB571720046A903 /* FZQLoginView.m */; };
+		882B298C1CB57A4C0046A903 /* FZQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B29371CB571720046A903 /* FZQTextView.m */; };
+		882B298F1CB5B3920046A903 /* FZQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B298E1CB5B3920046A903 /* FZQBaseViewController.m */; };
+		882B29921CB5C0C80046A903 /* FZQRedeemCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B29911CB5C0C80046A903 /* FZQRedeemCodeViewController.m */; };
+		882B29951CB5C7EE0046A903 /* FZQMorePushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B29941CB5C7EE0046A903 /* FZQMorePushViewController.m */; };
+		884544B41CB42C98000BBC51 /* FZQMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884544B31CB42C98000BBC51 /* FZQMyLotteryViewController.xib */; };
+		884544BF1CB47E1A000BBC51 /* FZQSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884544BC1CB47E1A000BBC51 /* FZQSettingViewController.m */; };
+		884544C21CB48E06000BBC51 /* FZQGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 884544C11CB48E06000BBC51 /* FZQGroupItem.m */; };
+		884544C51CB48E61000BBC51 /* FZQBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 884544C41CB48E61000BBC51 /* FZQBaseItem.m */; };
+		884544C81CB4ACB1000BBC51 /* FZQSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 884544C71CB4ACB1000BBC51 /* FZQSwitchItem.m */; };
+		884544CB1CB4ACCB000BBC51 /* FZQArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 884544CA1CB4ACCB000BBC51 /* FZQArrowItem.m */; };
+		884907891CAA32450057F39C /* FZQArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884907881CAA32450057F39C /* FZQArenaViewController.m */; };
+		8849078C1CAA32FF0057F39C /* FZQHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8849078B1CAA32FF0057F39C /* FZQHistoryViewController.m */; };
+		8849078F1CAA335D0057F39C /* FZQMyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8849078E1CAA335D0057F39C /* FZQMyLotteryViewController.m */; };
+		8849079F1CAA34340057F39C /* FZQDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8849079C1CAA34340057F39C /* FZQDiscoveryViewController.m */; };
+		884907A21CAA37C90057F39C /* FZQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 884907A11CAA37C90057F39C /* FZQTabBar.m */; };
+		884907AB1CAAE6E10057F39C /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 884907AA1CAAE6E10057F39C /* UIView+Frame.m */; };
+		884907B31CAB00A20057F39C /* FZQLotteryHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884907B01CAB00A20057F39C /* FZQLotteryHallViewController.m */; };
+		884907B61CAB02640057F39C /* FZQHudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 884907B51CAB02640057F39C /* FZQHudView.m */; };
+		884907B91CAB06360057F39C /* FZQMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 884907B81CAB06360057F39C /* FZQMenuView.m */; };
+		884907BB1CAB06570057F39C /* FZQMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884907BA1CAB06570057F39C /* FZQMenuView.xib */; };
+		884907BE1CAB400E0057F39C /* FZQArenaNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884907BD1CAB400E0057F39C /* FZQArenaNavController.m */; };
+		884907C21CAB4AF10057F39C /* UIImage+FZQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 884907C11CAB4AF10057F39C /* UIImage+FZQExtension.m */; };
+		887CEC8D1CAEF31C00C010FC /* FZQAllLotteryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 887CEC8C1CAEF31C00C010FC /* FZQAllLotteryButton.m */; };
+		887CEC9B1CAF29EB00C010FC /* FZQNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 887CEC9A1CAF29EB00C010FC /* FZQNewFeatureViewController.m */; };
+		887CEC9E1CAF353F00C010FC /* FZQGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 887CEC9D1CAF353F00C010FC /* FZQGuideTool.m */; };
+		887CECA01CAF41F300C010FC /* FZQNewFeature.plist in Resources */ = {isa = PBXBuildFile; fileRef = 887CEC9F1CAF41F300C010FC /* FZQNewFeature.plist */; };
+		887CECA31CAF431C00C010FC /* FZQNewFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 887CECA21CAF431C00C010FC /* FZQNewFeature.m */; };
+		887CECAD1CB36CF700C010FC /* FZQSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 887CECAC1CB36CF700C010FC /* FZQSaveTool.m */; };
 		889A80A41CA8F38A0029A97D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889A80A31CA8F38A0029A97D /* Assets.xcassets */; };
 		889A80A71CA8F38A0029A97D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889A80A51CA8F38A0029A97D /* LaunchScreen.storyboard */; };
 		889A80B21CA8F38A0029A97D /* lotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A80B11CA8F38A0029A97D /* lotteryTests.m */; };
 		889A80BD1CA8F38A0029A97D /* lotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A80BC1CA8F38A0029A97D /* lotteryUITests.m */; };
+		889A80F01CAA02ED0029A97D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A80EC1CAA02ED0029A97D /* AppDelegate.m */; };
+		889A80F11CAA02ED0029A97D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A80EE1CAA02ED0029A97D /* main.m */; };
+		889A80F71CAA053E0029A97D /* FZQNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A80F61CAA053E0029A97D /* FZQNavController.m */; };
+		889A80FA1CAA05790029A97D /* FZQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A80F91CAA05790029A97D /* FZQTabBarController.m */; };
+		889A81041CAA1E760029A97D /* UIImage+OriginalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A81031CAA1E760029A97D /* UIImage+OriginalImage.m */; };
+		88AC4A6F1CAB56B20016D9E2 /* FZQDiscoveryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AC4A6E1CAB56B20016D9E2 /* FZQDiscoveryViewController.storyboard */; };
+		88AC4A721CAB6D6F0016D9E2 /* FZQAllLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC4A711CAB6D6F0016D9E2 /* FZQAllLotteryViewController.m */; };
+		88E1454B1CB4B73B00A8A898 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E145471CB4B73B00A8A898 /* MBProgressHUD+XMG.m */; };
+		88E1454C1CB4B73B00A8A898 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88E145481CB4B73B00A8A898 /* MBProgressHUD.bundle */; };
+		88E1454D1CB4B73B00A8A898 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E1454A1CB4B73B00A8A898 /* MBProgressHUD.m */; };
+		88E1458F1CB4B77100A8A898 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88E145751CB4B77100A8A898 /* Info.plist */; };
+		88E145901CB4B77100A8A898 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E145771CB4B77100A8A898 /* MASCompositeConstraint.m */; };
+		88E145911CB4B77100A8A898 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E1457A1CB4B77100A8A898 /* MASConstraint.m */; };
+		88E145921CB4B77100A8A898 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E1457C1CB4B77100A8A898 /* MASConstraintMaker.m */; };
+		88E145931CB4B77100A8A898 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E1457E1CB4B77100A8A898 /* MASLayoutConstraint.m */; };
+		88E145941CB4B77100A8A898 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E145821CB4B77100A8A898 /* MASViewAttribute.m */; };
+		88E145951CB4B77100A8A898 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E145841CB4B77100A8A898 /* MASViewConstraint.m */; };
+		88E145961CB4B77100A8A898 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E145861CB4B77100A8A898 /* NSArray+MASAdditions.m */; };
+		88E145971CB4B77100A8A898 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E145891CB4B77100A8A898 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		88E145981CB4B77100A8A898 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E1458B1CB4B77100A8A898 /* View+MASAdditions.m */; };
+		88E145991CB4B77100A8A898 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E1458E1CB4B77100A8A898 /* ViewController+MASAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +87,74 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8813E9A71CB6C8AB003E85A4 /* FZQBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQBaseCell.h; path = FZQSettingCell/FZQBaseCell.h; sourceTree = "<group>"; };
+		8813E9A81CB6C8AB003E85A4 /* FZQBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQBaseCell.m; path = FZQSettingCell/FZQBaseCell.m; sourceTree = "<group>"; };
+		882B29251CB571720046A903 /* FZQLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQLoginViewController.h; sourceTree = "<group>"; };
+		882B29261CB571720046A903 /* FZQLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQLoginViewController.m; sourceTree = "<group>"; };
+		882B29271CB571720046A903 /* Single.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Single.h; sourceTree = "<group>"; };
+		882B292B1CB571720046A903 /* FZQLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQLoginView.h; sourceTree = "<group>"; };
+		882B292C1CB571720046A903 /* FZQLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQLoginView.m; sourceTree = "<group>"; };
+		882B292E1CB571720046A903 /* FZQOwl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQOwl.h; sourceTree = "<group>"; };
+		882B292F1CB571720046A903 /* FZQOwl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQOwl.m; sourceTree = "<group>"; };
+		882B29301CB571720046A903 /* FZQOwl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZQOwl.xib; sourceTree = "<group>"; };
+		882B29321CB571720046A903 /* FZQSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQSwitchView.h; sourceTree = "<group>"; };
+		882B29331CB571720046A903 /* FZQSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQSwitchView.m; sourceTree = "<group>"; };
+		882B29341CB571720046A903 /* FZQSwitchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZQSwitchView.xib; sourceTree = "<group>"; };
+		882B29361CB571720046A903 /* FZQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQTextView.h; sourceTree = "<group>"; };
+		882B29371CB571720046A903 /* FZQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQTextView.m; sourceTree = "<group>"; };
+		882B298D1CB5B3920046A903 /* FZQBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQBaseViewController.h; path = FZQBaseViewController/FZQBaseViewController.h; sourceTree = "<group>"; };
+		882B298E1CB5B3920046A903 /* FZQBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQBaseViewController.m; path = FZQBaseViewController/FZQBaseViewController.m; sourceTree = "<group>"; };
+		882B29901CB5C0C80046A903 /* FZQRedeemCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQRedeemCodeViewController.h; path = FZQRedeemCodeViewController/FZQRedeemCodeViewController.h; sourceTree = "<group>"; };
+		882B29911CB5C0C80046A903 /* FZQRedeemCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQRedeemCodeViewController.m; path = FZQRedeemCodeViewController/FZQRedeemCodeViewController.m; sourceTree = "<group>"; };
+		882B29931CB5C7EE0046A903 /* FZQMorePushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQMorePushViewController.h; path = FZQMorePushViewController/FZQMorePushViewController.h; sourceTree = "<group>"; };
+		882B29941CB5C7EE0046A903 /* FZQMorePushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQMorePushViewController.m; path = FZQMorePushViewController/FZQMorePushViewController.m; sourceTree = "<group>"; };
+		883784631CAA26A200D5FB6F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		884544B31CB42C98000BBC51 /* FZQMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FZQMyLotteryViewController.xib; path = FZQMyLotteryViewController/FZQMyLotteryViewController.xib; sourceTree = "<group>"; };
+		884544BB1CB47E1A000BBC51 /* FZQSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQSettingViewController.h; path = FZQSettingViewController/FZQSettingViewController.h; sourceTree = "<group>"; };
+		884544BC1CB47E1A000BBC51 /* FZQSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQSettingViewController.m; path = FZQSettingViewController/FZQSettingViewController.m; sourceTree = "<group>"; };
+		884544C01CB48E06000BBC51 /* FZQGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQGroupItem.h; path = FZQgroupItem/FZQGroupItem.h; sourceTree = "<group>"; };
+		884544C11CB48E06000BBC51 /* FZQGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQGroupItem.m; path = FZQgroupItem/FZQGroupItem.m; sourceTree = "<group>"; };
+		884544C31CB48E61000BBC51 /* FZQBaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQBaseItem.h; path = FZQsettingItem/FZQBaseItem.h; sourceTree = "<group>"; };
+		884544C41CB48E61000BBC51 /* FZQBaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQBaseItem.m; path = FZQsettingItem/FZQBaseItem.m; sourceTree = "<group>"; };
+		884544C61CB4ACB1000BBC51 /* FZQSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQSwitchItem.h; path = FZQSwitchItem/FZQSwitchItem.h; sourceTree = "<group>"; };
+		884544C71CB4ACB1000BBC51 /* FZQSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQSwitchItem.m; path = FZQSwitchItem/FZQSwitchItem.m; sourceTree = "<group>"; };
+		884544C91CB4ACCB000BBC51 /* FZQArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQArrowItem.h; path = FZQArrowItem/FZQArrowItem.h; sourceTree = "<group>"; };
+		884544CA1CB4ACCB000BBC51 /* FZQArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQArrowItem.m; path = FZQArrowItem/FZQArrowItem.m; sourceTree = "<group>"; };
+		884907871CAA32450057F39C /* FZQArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQArenaViewController.h; path = FZQArenaViewController/FZQArenaViewController.h; sourceTree = "<group>"; };
+		884907881CAA32450057F39C /* FZQArenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQArenaViewController.m; path = FZQArenaViewController/FZQArenaViewController.m; sourceTree = "<group>"; };
+		8849078A1CAA32FF0057F39C /* FZQHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQHistoryViewController.h; path = FZQHistoryViewController/FZQHistoryViewController.h; sourceTree = "<group>"; };
+		8849078B1CAA32FF0057F39C /* FZQHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQHistoryViewController.m; path = FZQHistoryViewController/FZQHistoryViewController.m; sourceTree = "<group>"; };
+		8849078D1CAA335D0057F39C /* FZQMyLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQMyLotteryViewController.h; path = FZQMyLotteryViewController/FZQMyLotteryViewController.h; sourceTree = "<group>"; };
+		8849078E1CAA335D0057F39C /* FZQMyLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQMyLotteryViewController.m; path = FZQMyLotteryViewController/FZQMyLotteryViewController.m; sourceTree = "<group>"; };
+		8849079B1CAA34340057F39C /* FZQDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQDiscoveryViewController.h; path = FZQDiscoveryViewController/FZQDiscoveryViewController.h; sourceTree = "<group>"; };
+		8849079C1CAA34340057F39C /* FZQDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQDiscoveryViewController.m; path = FZQDiscoveryViewController/FZQDiscoveryViewController.m; sourceTree = "<group>"; };
+		884907A01CAA37C90057F39C /* FZQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQTabBar.h; path = FZQTabBar/FZQTabBar.h; sourceTree = "<group>"; };
+		884907A11CAA37C90057F39C /* FZQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQTabBar.m; path = FZQTabBar/FZQTabBar.m; sourceTree = "<group>"; };
+		884907A91CAAE6E10057F39C /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "UIView+Frame/UIView+Frame.h"; sourceTree = "<group>"; };
+		884907AA1CAAE6E10057F39C /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "UIView+Frame/UIView+Frame.m"; sourceTree = "<group>"; };
+		884907AF1CAB00A20057F39C /* FZQLotteryHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQLotteryHallViewController.h; path = FZQLotteryHallViewController/FZQLotteryHallViewController.h; sourceTree = "<group>"; };
+		884907B01CAB00A20057F39C /* FZQLotteryHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQLotteryHallViewController.m; path = FZQLotteryHallViewController/FZQLotteryHallViewController.m; sourceTree = "<group>"; };
+		884907B41CAB02640057F39C /* FZQHudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQHudView.h; path = FZQHudView/FZQHudView.h; sourceTree = "<group>"; };
+		884907B51CAB02640057F39C /* FZQHudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQHudView.m; path = FZQHudView/FZQHudView.m; sourceTree = "<group>"; };
+		884907B71CAB06360057F39C /* FZQMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQMenuView.h; path = FZQMenuView/FZQMenuView.h; sourceTree = "<group>"; };
+		884907B81CAB06360057F39C /* FZQMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQMenuView.m; path = FZQMenuView/FZQMenuView.m; sourceTree = "<group>"; };
+		884907BA1CAB06570057F39C /* FZQMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FZQMenuView.xib; path = FZQMenuView/FZQMenuView.xib; sourceTree = "<group>"; };
+		884907BC1CAB400E0057F39C /* FZQArenaNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQArenaNavController.h; path = FZQArenaNavController/FZQArenaNavController.h; sourceTree = "<group>"; };
+		884907BD1CAB400E0057F39C /* FZQArenaNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQArenaNavController.m; path = FZQArenaNavController/FZQArenaNavController.m; sourceTree = "<group>"; };
+		884907C01CAB4AF10057F39C /* UIImage+FZQExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+FZQExtension.h"; path = "UIImage+FZQExtension/UIImage+FZQExtension.h"; sourceTree = "<group>"; };
+		884907C11CAB4AF10057F39C /* UIImage+FZQExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FZQExtension.m"; path = "UIImage+FZQExtension/UIImage+FZQExtension.m"; sourceTree = "<group>"; };
+		887CEC8B1CAEF31C00C010FC /* FZQAllLotteryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQAllLotteryButton.h; path = FZQAllLotteryButton/FZQAllLotteryButton.h; sourceTree = "<group>"; };
+		887CEC8C1CAEF31C00C010FC /* FZQAllLotteryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQAllLotteryButton.m; path = FZQAllLotteryButton/FZQAllLotteryButton.m; sourceTree = "<group>"; };
+		887CEC991CAF29EB00C010FC /* FZQNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQNewFeatureViewController.h; path = FZQNewFeatureViewController/FZQNewFeatureViewController.h; sourceTree = "<group>"; };
+		887CEC9A1CAF29EB00C010FC /* FZQNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQNewFeatureViewController.m; path = FZQNewFeatureViewController/FZQNewFeatureViewController.m; sourceTree = "<group>"; };
+		887CEC9C1CAF353F00C010FC /* FZQGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQGuideTool.h; path = FZQGuideTool/FZQGuideTool.h; sourceTree = "<group>"; };
+		887CEC9D1CAF353F00C010FC /* FZQGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQGuideTool.m; path = FZQGuideTool/FZQGuideTool.m; sourceTree = "<group>"; };
+		887CEC9F1CAF41F300C010FC /* FZQNewFeature.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FZQNewFeature.plist; sourceTree = "<group>"; };
+		887CECA11CAF431C00C010FC /* FZQNewFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQNewFeature.h; sourceTree = "<group>"; };
+		887CECA21CAF431C00C010FC /* FZQNewFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQNewFeature.m; sourceTree = "<group>"; };
+		887CECAB1CB36CF700C010FC /* FZQSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQSaveTool.h; path = FZQSaveTool/FZQSaveTool.h; sourceTree = "<group>"; };
+		887CECAC1CB36CF700C010FC /* FZQSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQSaveTool.m; path = FZQSaveTool/FZQSaveTool.m; sourceTree = "<group>"; };
 		889A80941CA8F38A0029A97D /* lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		889A80981CA8F38A0029A97D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		889A809A1CA8F38A0029A97D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		889A809B1CA8F38A0029A97D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		889A809D1CA8F38A0029A97D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		889A809E1CA8F38A0029A97D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		889A80A11CA8F38A0029A97D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		889A80A31CA8F38A0029A97D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		889A80A61CA8F38A0029A97D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		889A80A81CA8F38A0029A97D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +164,49 @@
 		889A80B81CA8F38A0029A97D /* lotteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lotteryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		889A80BC1CA8F38A0029A97D /* lotteryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lotteryUITests.m; sourceTree = "<group>"; };
 		889A80BE1CA8F38A0029A97D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889A80EB1CAA02ED0029A97D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		889A80EC1CAA02ED0029A97D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		889A80EE1CAA02ED0029A97D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		889A80F51CAA053E0029A97D /* FZQNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQNavController.h; path = "lottery/Classes/Main(主要)/Controller/FZQNavController/FZQNavController.h"; sourceTree = SOURCE_ROOT; };
+		889A80F61CAA053E0029A97D /* FZQNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQNavController.m; path = "lottery/Classes/Main(主要)/Controller/FZQNavController/FZQNavController.m"; sourceTree = SOURCE_ROOT; };
+		889A80F81CAA05790029A97D /* FZQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQTabBarController.h; path = FZQTabBarController/FZQTabBarController.h; sourceTree = "<group>"; };
+		889A80F91CAA05790029A97D /* FZQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQTabBarController.m; path = FZQTabBarController/FZQTabBarController.m; sourceTree = "<group>"; };
+		889A81021CAA1E760029A97D /* UIImage+OriginalImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+OriginalImage.h"; path = "UIImage+OriginalImage/UIImage+OriginalImage.h"; sourceTree = "<group>"; };
+		889A81031CAA1E760029A97D /* UIImage+OriginalImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+OriginalImage.m"; path = "UIImage+OriginalImage/UIImage+OriginalImage.m"; sourceTree = "<group>"; };
+		88AC4A6E1CAB56B20016D9E2 /* FZQDiscoveryViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FZQDiscoveryViewController.storyboard; path = FZQDiscoveryViewController/FZQDiscoveryViewController.storyboard; sourceTree = "<group>"; };
+		88AC4A701CAB6D6F0016D9E2 /* FZQAllLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQAllLotteryViewController.h; path = FZQAllLotteryViewController/FZQAllLotteryViewController.h; sourceTree = "<group>"; };
+		88AC4A711CAB6D6F0016D9E2 /* FZQAllLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQAllLotteryViewController.m; path = FZQAllLotteryViewController/FZQAllLotteryViewController.m; sourceTree = "<group>"; };
+		88E145461CB4B73B00A8A898 /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
+		88E145471CB4B73B00A8A898 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
+		88E145481CB4B73B00A8A898 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		88E145491CB4B73B00A8A898 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		88E1454A1CB4B73B00A8A898 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		88E145751CB4B77100A8A898 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E145761CB4B77100A8A898 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		88E145771CB4B77100A8A898 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		88E145781CB4B77100A8A898 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		88E145791CB4B77100A8A898 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		88E1457A1CB4B77100A8A898 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		88E1457B1CB4B77100A8A898 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		88E1457C1CB4B77100A8A898 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		88E1457D1CB4B77100A8A898 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		88E1457E1CB4B77100A8A898 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		88E1457F1CB4B77100A8A898 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		88E145801CB4B77100A8A898 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		88E145811CB4B77100A8A898 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		88E145821CB4B77100A8A898 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		88E145831CB4B77100A8A898 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		88E145841CB4B77100A8A898 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		88E145851CB4B77100A8A898 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		88E145861CB4B77100A8A898 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		88E145871CB4B77100A8A898 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		88E145881CB4B77100A8A898 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		88E145891CB4B77100A8A898 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		88E1458A1CB4B77100A8A898 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		88E1458B1CB4B77100A8A898 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		88E1458C1CB4B77100A8A898 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		88E1458D1CB4B77100A8A898 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		88E1458E1CB4B77100A8A898 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +234,207 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		882B29231CB571720046A903 /* login(登录） */ = {
+			isa = PBXGroup;
+			children = (
+				882B29241CB571720046A903 /* Controller */,
+				882B29281CB571720046A903 /* Model */,
+				882B29291CB571720046A903 /* View */,
+			);
+			path = "login(登录）";
+			sourceTree = "<group>";
+		};
+		882B29241CB571720046A903 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				882B29251CB571720046A903 /* FZQLoginViewController.h */,
+				882B29261CB571720046A903 /* FZQLoginViewController.m */,
+				882B29271CB571720046A903 /* Single.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		882B29281CB571720046A903 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		882B29291CB571720046A903 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				882B292A1CB571720046A903 /* FZQLoginView */,
+				882B292D1CB571720046A903 /* FZQOwl */,
+				882B29311CB571720046A903 /* FZQRegistSwithch */,
+				882B29351CB571720046A903 /* FZQRegistTextField */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		882B292A1CB571720046A903 /* FZQLoginView */ = {
+			isa = PBXGroup;
+			children = (
+				882B292B1CB571720046A903 /* FZQLoginView.h */,
+				882B292C1CB571720046A903 /* FZQLoginView.m */,
+			);
+			path = FZQLoginView;
+			sourceTree = "<group>";
+		};
+		882B292D1CB571720046A903 /* FZQOwl */ = {
+			isa = PBXGroup;
+			children = (
+				882B292E1CB571720046A903 /* FZQOwl.h */,
+				882B292F1CB571720046A903 /* FZQOwl.m */,
+				882B29301CB571720046A903 /* FZQOwl.xib */,
+			);
+			path = FZQOwl;
+			sourceTree = "<group>";
+		};
+		882B29311CB571720046A903 /* FZQRegistSwithch */ = {
+			isa = PBXGroup;
+			children = (
+				882B29321CB571720046A903 /* FZQSwitchView.h */,
+				882B29331CB571720046A903 /* FZQSwitchView.m */,
+				882B29341CB571720046A903 /* FZQSwitchView.xib */,
+			);
+			path = FZQRegistSwithch;
+			sourceTree = "<group>";
+		};
+		882B29351CB571720046A903 /* FZQRegistTextField */ = {
+			isa = PBXGroup;
+			children = (
+				882B29361CB571720046A903 /* FZQTextView.h */,
+				882B29371CB571720046A903 /* FZQTextView.m */,
+			);
+			path = FZQRegistTextField;
+			sourceTree = "<group>";
+		};
+		884544B81CB47E1A000BBC51 /* Setting(设置） */ = {
+			isa = PBXGroup;
+			children = (
+				884544B91CB47E1A000BBC51 /* Controller */,
+				884544BD1CB47E1A000BBC51 /* Model */,
+				884544BE1CB47E1A000BBC51 /* View */,
+			);
+			path = "Setting(设置）";
+			sourceTree = "<group>";
+		};
+		884544B91CB47E1A000BBC51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				882B298D1CB5B3920046A903 /* FZQBaseViewController.h */,
+				882B298E1CB5B3920046A903 /* FZQBaseViewController.m */,
+				884544BB1CB47E1A000BBC51 /* FZQSettingViewController.h */,
+				884544BC1CB47E1A000BBC51 /* FZQSettingViewController.m */,
+				882B29901CB5C0C80046A903 /* FZQRedeemCodeViewController.h */,
+				882B29911CB5C0C80046A903 /* FZQRedeemCodeViewController.m */,
+				882B29931CB5C7EE0046A903 /* FZQMorePushViewController.h */,
+				882B29941CB5C7EE0046A903 /* FZQMorePushViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		884544BD1CB47E1A000BBC51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				884544C01CB48E06000BBC51 /* FZQGroupItem.h */,
+				884544C11CB48E06000BBC51 /* FZQGroupItem.m */,
+				884544C31CB48E61000BBC51 /* FZQBaseItem.h */,
+				884544C41CB48E61000BBC51 /* FZQBaseItem.m */,
+				884544C61CB4ACB1000BBC51 /* FZQSwitchItem.h */,
+				884544C71CB4ACB1000BBC51 /* FZQSwitchItem.m */,
+				884544C91CB4ACCB000BBC51 /* FZQArrowItem.h */,
+				884544CA1CB4ACCB000BBC51 /* FZQArrowItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		884544BE1CB47E1A000BBC51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8813E9A71CB6C8AB003E85A4 /* FZQBaseCell.h */,
+				8813E9A81CB6C8AB003E85A4 /* FZQBaseCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		884907981CAA34340057F39C /* Discovery(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				884907991CAA34340057F39C /* Controller */,
+				8849079D1CAA34340057F39C /* Model */,
+				8849079E1CAA34340057F39C /* View */,
+			);
+			path = "Discovery(发现)";
+			sourceTree = "<group>";
+		};
+		884907991CAA34340057F39C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8849079B1CAA34340057F39C /* FZQDiscoveryViewController.h */,
+				8849079C1CAA34340057F39C /* FZQDiscoveryViewController.m */,
+				88AC4A6E1CAB56B20016D9E2 /* FZQDiscoveryViewController.storyboard */,
+				88AC4A701CAB6D6F0016D9E2 /* FZQAllLotteryViewController.h */,
+				88AC4A711CAB6D6F0016D9E2 /* FZQAllLotteryViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8849079D1CAA34340057F39C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8849079E1CAA34340057F39C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				887CEC8B1CAEF31C00C010FC /* FZQAllLotteryButton.h */,
+				887CEC8C1CAEF31C00C010FC /* FZQAllLotteryButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		884907AC1CAB00A20057F39C /* LotteryHall（购彩大厅） */ = {
+			isa = PBXGroup;
+			children = (
+				884907AD1CAB00A20057F39C /* Controller */,
+				884907B11CAB00A20057F39C /* Model */,
+				884907B21CAB00A20057F39C /* View */,
+			);
+			path = "LotteryHall（购彩大厅）";
+			sourceTree = "<group>";
+		};
+		884907AD1CAB00A20057F39C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				884907AF1CAB00A20057F39C /* FZQLotteryHallViewController.h */,
+				884907B01CAB00A20057F39C /* FZQLotteryHallViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		884907B11CAB00A20057F39C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		884907B21CAB00A20057F39C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				884907B41CAB02640057F39C /* FZQHudView.h */,
+				884907B51CAB02640057F39C /* FZQHudView.m */,
+				884907B71CAB06360057F39C /* FZQMenuView.h */,
+				884907B81CAB06360057F39C /* FZQMenuView.m */,
+				884907BA1CAB06570057F39C /* FZQMenuView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		889A808B1CA8F38A0029A97D = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +458,7 @@
 		889A80961CA8F38A0029A97D /* lottery */ = {
 			isa = PBXGroup;
 			children = (
-				889A809A1CA8F38A0029A97D /* AppDelegate.h */,
-				889A809B1CA8F38A0029A97D /* AppDelegate.m */,
-				889A809D1CA8F38A0029A97D /* ViewController.h */,
-				889A809E1CA8F38A0029A97D /* ViewController.m */,
-				889A80A01CA8F38A0029A97D /* Main.storyboard */,
+				889A80CD1CAA02ED0029A97D /* Classes */,
 				889A80A31CA8F38A0029A97D /* Assets.xcassets */,
 				889A80A51CA8F38A0029A97D /* LaunchScreen.storyboard */,
 				889A80A81CA8F38A0029A97D /* Info.plist */,
@@ -117,7 +470,6 @@
 		889A80971CA8F38A0029A97D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				889A80981CA8F38A0029A97D /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +490,290 @@
 				889A80BE1CA8F38A0029A97D /* Info.plist */,
 			);
 			path = lotteryUITests;
+			sourceTree = "<group>";
+		};
+		889A80CD1CAA02ED0029A97D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				882B29231CB571720046A903 /* login(登录） */,
+				884544B81CB47E1A000BBC51 /* Setting(设置） */,
+				889A80EF1CAA02ED0029A97D /* Tool(工具) */,
+				884907AC1CAB00A20057F39C /* LotteryHall（购彩大厅） */,
+				889A80CE1CAA02ED0029A97D /* Arena(竞技场) */,
+				884907981CAA34340057F39C /* Discovery(发现) */,
+				889A80DA1CAA02ED0029A97D /* History(开奖信息) */,
+				889A80E21CAA02ED0029A97D /* MyLottery（我的彩票） */,
+				889A80DE1CAA02ED0029A97D /* Main(主要) */,
+				889A80E61CAA02ED0029A97D /* NewFeature(新特性界面) */,
+				889A80EA1CAA02ED0029A97D /* Other(其他） */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		889A80CE1CAA02ED0029A97D /* Arena(竞技场) */ = {
+			isa = PBXGroup;
+			children = (
+				889A80CF1CAA02ED0029A97D /* Controller */,
+				889A80D01CAA02ED0029A97D /* Model */,
+				889A80D11CAA02ED0029A97D /* View */,
+			);
+			path = "Arena(竞技场)";
+			sourceTree = "<group>";
+		};
+		889A80CF1CAA02ED0029A97D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				884907871CAA32450057F39C /* FZQArenaViewController.h */,
+				884907881CAA32450057F39C /* FZQArenaViewController.m */,
+				884907BC1CAB400E0057F39C /* FZQArenaNavController.h */,
+				884907BD1CAB400E0057F39C /* FZQArenaNavController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		889A80D01CAA02ED0029A97D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		889A80D11CAA02ED0029A97D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		889A80DA1CAA02ED0029A97D /* History(开奖信息) */ = {
+			isa = PBXGroup;
+			children = (
+				889A80DB1CAA02ED0029A97D /* Controller */,
+				889A80DC1CAA02ED0029A97D /* Model */,
+				889A80DD1CAA02ED0029A97D /* View */,
+			);
+			path = "History(开奖信息)";
+			sourceTree = "<group>";
+		};
+		889A80DB1CAA02ED0029A97D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8849078A1CAA32FF0057F39C /* FZQHistoryViewController.h */,
+				8849078B1CAA32FF0057F39C /* FZQHistoryViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		889A80DC1CAA02ED0029A97D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		889A80DD1CAA02ED0029A97D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		889A80DE1CAA02ED0029A97D /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				889A80DF1CAA02ED0029A97D /* Controller */,
+				889A80E01CAA02ED0029A97D /* Model */,
+				889A80E11CAA02ED0029A97D /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		889A80DF1CAA02ED0029A97D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				889A80F51CAA053E0029A97D /* FZQNavController.h */,
+				889A80F61CAA053E0029A97D /* FZQNavController.m */,
+				889A80F81CAA05790029A97D /* FZQTabBarController.h */,
+				889A80F91CAA05790029A97D /* FZQTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		889A80E01CAA02ED0029A97D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		889A80E11CAA02ED0029A97D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				884907A01CAA37C90057F39C /* FZQTabBar.h */,
+				884907A11CAA37C90057F39C /* FZQTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		889A80E21CAA02ED0029A97D /* MyLottery（我的彩票） */ = {
+			isa = PBXGroup;
+			children = (
+				889A80E31CAA02ED0029A97D /* Controller */,
+				889A80E41CAA02ED0029A97D /* Model */,
+				889A80E51CAA02ED0029A97D /* View */,
+			);
+			path = "MyLottery（我的彩票）";
+			sourceTree = "<group>";
+		};
+		889A80E31CAA02ED0029A97D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8849078D1CAA335D0057F39C /* FZQMyLotteryViewController.h */,
+				8849078E1CAA335D0057F39C /* FZQMyLotteryViewController.m */,
+				884544B31CB42C98000BBC51 /* FZQMyLotteryViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		889A80E41CAA02ED0029A97D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		889A80E51CAA02ED0029A97D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		889A80E61CAA02ED0029A97D /* NewFeature(新特性界面) */ = {
+			isa = PBXGroup;
+			children = (
+				889A80E71CAA02ED0029A97D /* Controller */,
+				889A80E81CAA02ED0029A97D /* Model */,
+				889A80E91CAA02ED0029A97D /* View */,
+			);
+			path = "NewFeature(新特性界面)";
+			sourceTree = "<group>";
+		};
+		889A80E71CAA02ED0029A97D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				887CEC991CAF29EB00C010FC /* FZQNewFeatureViewController.h */,
+				887CEC9A1CAF29EB00C010FC /* FZQNewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		889A80E81CAA02ED0029A97D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				887CECA11CAF431C00C010FC /* FZQNewFeature.h */,
+				887CECA21CAF431C00C010FC /* FZQNewFeature.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		889A80E91CAA02ED0029A97D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		889A80EA1CAA02ED0029A97D /* Other(其他） */ = {
+			isa = PBXGroup;
+			children = (
+				889A80EB1CAA02ED0029A97D /* AppDelegate.h */,
+				889A80EC1CAA02ED0029A97D /* AppDelegate.m */,
+				883784631CAA26A200D5FB6F /* PrefixHeader.pch */,
+				887CEC9F1CAF41F300C010FC /* FZQNewFeature.plist */,
+				88E144E11CB4B53700A8A898 /* Lib(第三方框架) */,
+				889A80ED1CAA02ED0029A97D /* Category(分类） */,
+				889A80EE1CAA02ED0029A97D /* main.m */,
+			);
+			path = "Other(其他）";
+			sourceTree = "<group>";
+		};
+		889A80ED1CAA02ED0029A97D /* Category(分类） */ = {
+			isa = PBXGroup;
+			children = (
+				884907C01CAB4AF10057F39C /* UIImage+FZQExtension.h */,
+				884907C11CAB4AF10057F39C /* UIImage+FZQExtension.m */,
+				889A81021CAA1E760029A97D /* UIImage+OriginalImage.h */,
+				889A81031CAA1E760029A97D /* UIImage+OriginalImage.m */,
+				884907A91CAAE6E10057F39C /* UIView+Frame.h */,
+				884907AA1CAAE6E10057F39C /* UIView+Frame.m */,
+			);
+			path = "Category(分类）";
+			sourceTree = "<group>";
+		};
+		889A80EF1CAA02ED0029A97D /* Tool(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				887CEC9C1CAF353F00C010FC /* FZQGuideTool.h */,
+				887CEC9D1CAF353F00C010FC /* FZQGuideTool.m */,
+				887CECAB1CB36CF700C010FC /* FZQSaveTool.h */,
+				887CECAC1CB36CF700C010FC /* FZQSaveTool.m */,
+			);
+			path = "Tool(工具)";
+			sourceTree = "<group>";
+		};
+		88E144E11CB4B53700A8A898 /* Lib(第三方框架) */ = {
+			isa = PBXGroup;
+			children = (
+				88E145741CB4B77100A8A898 /* Masonry */,
+				88E145451CB4B73B00A8A898 /* MBProgressHUD */,
+			);
+			path = "Lib(第三方框架)";
+			sourceTree = "<group>";
+		};
+		88E145451CB4B73B00A8A898 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				88E145461CB4B73B00A8A898 /* MBProgressHUD+XMG.h */,
+				88E145471CB4B73B00A8A898 /* MBProgressHUD+XMG.m */,
+				88E145481CB4B73B00A8A898 /* MBProgressHUD.bundle */,
+				88E145491CB4B73B00A8A898 /* MBProgressHUD.h */,
+				88E1454A1CB4B73B00A8A898 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		88E145741CB4B77100A8A898 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				88E145751CB4B77100A8A898 /* Info.plist */,
+				88E145761CB4B77100A8A898 /* MASCompositeConstraint.h */,
+				88E145771CB4B77100A8A898 /* MASCompositeConstraint.m */,
+				88E145781CB4B77100A8A898 /* MASConstraint+Private.h */,
+				88E145791CB4B77100A8A898 /* MASConstraint.h */,
+				88E1457A1CB4B77100A8A898 /* MASConstraint.m */,
+				88E1457B1CB4B77100A8A898 /* MASConstraintMaker.h */,
+				88E1457C1CB4B77100A8A898 /* MASConstraintMaker.m */,
+				88E1457D1CB4B77100A8A898 /* MASLayoutConstraint.h */,
+				88E1457E1CB4B77100A8A898 /* MASLayoutConstraint.m */,
+				88E1457F1CB4B77100A8A898 /* Masonry.h */,
+				88E145801CB4B77100A8A898 /* MASUtilities.h */,
+				88E145811CB4B77100A8A898 /* MASViewAttribute.h */,
+				88E145821CB4B77100A8A898 /* MASViewAttribute.m */,
+				88E145831CB4B77100A8A898 /* MASViewConstraint.h */,
+				88E145841CB4B77100A8A898 /* MASViewConstraint.m */,
+				88E145851CB4B77100A8A898 /* NSArray+MASAdditions.h */,
+				88E145861CB4B77100A8A898 /* NSArray+MASAdditions.m */,
+				88E145871CB4B77100A8A898 /* NSArray+MASShorthandAdditions.h */,
+				88E145881CB4B77100A8A898 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				88E145891CB4B77100A8A898 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				88E1458A1CB4B77100A8A898 /* View+MASAdditions.h */,
+				88E1458B1CB4B77100A8A898 /* View+MASAdditions.m */,
+				88E1458C1CB4B77100A8A898 /* View+MASShorthandAdditions.h */,
+				88E1458D1CB4B77100A8A898 /* ViewController+MASAdditions.h */,
+				88E1458E1CB4B77100A8A898 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,11 +838,13 @@
 		889A808C1CA8F38A0029A97D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FZQ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = FZQ;
 				TargetAttributes = {
 					889A80931CA8F38A0029A97D = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2NMG2793N9;
 					};
 					889A80AC1CA8F38A0029A97D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -243,9 +881,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884544B41CB42C98000BBC51 /* FZQMyLotteryViewController.xib in Resources */,
+				882B293B1CB571720046A903 /* FZQOwl.xib in Resources */,
+				887CECA01CAF41F300C010FC /* FZQNewFeature.plist in Resources */,
+				88AC4A6F1CAB56B20016D9E2 /* FZQDiscoveryViewController.storyboard in Resources */,
+				884907BB1CAB06570057F39C /* FZQMenuView.xib in Resources */,
+				88E1454C1CB4B73B00A8A898 /* MBProgressHUD.bundle in Resources */,
 				889A80A71CA8F38A0029A97D /* LaunchScreen.storyboard in Resources */,
+				88E1458F1CB4B77100A8A898 /* Info.plist in Resources */,
+				882B293D1CB571720046A903 /* FZQSwitchView.xib in Resources */,
 				889A80A41CA8F38A0029A97D /* Assets.xcassets in Resources */,
-				889A80A21CA8F38A0029A97D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +915,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				889A809F1CA8F38A0029A97D /* ViewController.m in Sources */,
-				889A809C1CA8F38A0029A97D /* AppDelegate.m in Sources */,
-				889A80991CA8F38A0029A97D /* main.m in Sources */,
+				882B298C1CB57A4C0046A903 /* FZQTextView.m in Sources */,
+				882B298B1CB57A060046A903 /* FZQLoginView.m in Sources */,
+				882B298A1CB579F70046A903 /* FZQLoginViewController.m in Sources */,
+				889A80F11CAA02ED0029A97D /* main.m in Sources */,
+				8849078F1CAA335D0057F39C /* FZQMyLotteryViewController.m in Sources */,
+				8849078C1CAA32FF0057F39C /* FZQHistoryViewController.m in Sources */,
+				884907891CAA32450057F39C /* FZQArenaViewController.m in Sources */,
+				882B293A1CB571720046A903 /* FZQOwl.m in Sources */,
+				884544C81CB4ACB1000BBC51 /* FZQSwitchItem.m in Sources */,
+				884907AB1CAAE6E10057F39C /* UIView+Frame.m in Sources */,
+				8813E9A91CB6C8AB003E85A4 /* FZQBaseCell.m in Sources */,
+				884907B31CAB00A20057F39C /* FZQLotteryHallViewController.m in Sources */,
+				88E1454D1CB4B73B00A8A898 /* MBProgressHUD.m in Sources */,
+				889A80FA1CAA05790029A97D /* FZQTabBarController.m in Sources */,
+				884544CB1CB4ACCB000BBC51 /* FZQArrowItem.m in Sources */,
+				889A80F01CAA02ED0029A97D /* AppDelegate.m in Sources */,
+				882B293C1CB571720046A903 /* FZQSwitchView.m in Sources */,
+				88E145981CB4B77100A8A898 /* View+MASAdditions.m in Sources */,
+				88AC4A721CAB6D6F0016D9E2 /* FZQAllLotteryViewController.m in Sources */,
+				889A81041CAA1E760029A97D /* UIImage+OriginalImage.m in Sources */,
+				88E145951CB4B77100A8A898 /* MASViewConstraint.m in Sources */,
+				884907BE1CAB400E0057F39C /* FZQArenaNavController.m in Sources */,
+				887CECAD1CB36CF700C010FC /* FZQSaveTool.m in Sources */,
+				88E1454B1CB4B73B00A8A898 /* MBProgressHUD+XMG.m in Sources */,
+				88E145911CB4B77100A8A898 /* MASConstraint.m in Sources */,
+				887CEC8D1CAEF31C00C010FC /* FZQAllLotteryButton.m in Sources */,
+				88E145971CB4B77100A8A898 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				88E145961CB4B77100A8A898 /* NSArray+MASAdditions.m in Sources */,
+				882B29921CB5C0C80046A903 /* FZQRedeemCodeViewController.m in Sources */,
+				884907B91CAB06360057F39C /* FZQMenuView.m in Sources */,
+				887CEC9B1CAF29EB00C010FC /* FZQNewFeatureViewController.m in Sources */,
+				88E145931CB4B77100A8A898 /* MASLayoutConstraint.m in Sources */,
+				884544C51CB48E61000BBC51 /* FZQBaseItem.m in Sources */,
+				88E145901CB4B77100A8A898 /* MASCompositeConstraint.m in Sources */,
+				884907C21CAB4AF10057F39C /* UIImage+FZQExtension.m in Sources */,
+				88E145921CB4B77100A8A898 /* MASConstraintMaker.m in Sources */,
+				889A80F71CAA053E0029A97D /* FZQNavController.m in Sources */,
+				887CEC9E1CAF353F00C010FC /* FZQGuideTool.m in Sources */,
+				882B29951CB5C7EE0046A903 /* FZQMorePushViewController.m in Sources */,
+				884544BF1CB47E1A000BBC51 /* FZQSettingViewController.m in Sources */,
+				884907A21CAA37C90057F39C /* FZQTabBar.m in Sources */,
+				887CECA31CAF431C00C010FC /* FZQNewFeature.m in Sources */,
+				88E145991CB4B77100A8A898 /* ViewController+MASAdditions.m in Sources */,
+				882B298F1CB5B3920046A903 /* FZQBaseViewController.m in Sources */,
+				884907B61CAB02640057F39C /* FZQHudView.m in Sources */,
+				884544C21CB48E06000BBC51 /* FZQGroupItem.m in Sources */,
+				8849079F1CAA34340057F39C /* FZQDiscoveryViewController.m in Sources */,
+				88E145941CB4B77100A8A898 /* MASViewAttribute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +998,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		889A80A01CA8F38A0029A97D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				889A80A11CA8F38A0029A97D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		889A80A51CA8F38A0029A97D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -411,7 +1093,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lottery/Classes/Other(其他）/PrefixHeader.pch";
 				INFOPLIST_FILE = lottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FZQ.lottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +1108,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lottery/Classes/Other(其他）/PrefixHeader.pch";
 				INFOPLIST_FILE = lottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FZQ.lottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +1186,7 @@
 				889A80C31CA8F38A0029A97D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		889A80C41CA8F38A0029A97D /* Build configuration list for PBXNativeTarget "lotteryTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +1195,7 @@
 				889A80C61CA8F38A0029A97D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		889A80C71CA8F38A0029A97D /* Build configuration list for PBXNativeTarget "lotteryUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +1204,7 @@
 				889A80C91CA8F38A0029A97D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

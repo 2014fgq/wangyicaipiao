@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>backgroundIcon</key>
+		<string>guide1Background</string>
+		<key>icon</key>
+		<string>guide1</string>
+		<key>largeTextImage</key>
+		<string>guideLargeText1</string>
+		<key>smallTextImage</key>
+		<string>guideSmallText1</string>
+	</dict>
+	<dict>
+		<key>backgroundIcon</key>
+		<string>guide2Background</string>
+		<key>icon</key>
+		<string>guide2</string>
+		<key>largeTextImage</key>
+		<string>guideLargeText2</string>
+		<key>smallTextImage</key>
+		<string>guideSmallText2</string>
+	</dict>
+	<dict>
+		<key>backgroundIcon</key>
+		<string>guide3Background</string>
+		<key>icon</key>
+		<string>guide3</string>
+		<key>largeTextImage</key>
+		<string>guideLargeText3</string>
+		<key>smallTextImage</key>
+		<string>guideSmallText3</string>
+	</dict>
+	<dict>
+		<key>backgroundIcon</key>
+		<string>guide4Background</string>
+		<key>icon</key>
+		<string>guide4</string>
+		<key>largeTextImage</key>
+		<string>guideLargeText4</string>
+		<key>smallTextImage</key>
+		<string>guideSmallText4</string>
+	</dict>
+</array>
+</plist>
