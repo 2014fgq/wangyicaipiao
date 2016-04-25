@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FQDiscoveryVM.h"
 @interface FZQDiscoveryViewController : UITableViewController
-
+@property (strong, nonatomic) FQDiscoveryVM *vm;
 @end

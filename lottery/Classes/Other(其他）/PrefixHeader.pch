@@ -190,7 +190,8 @@
 // __VA_ARGS__函数里面可变参数
 #define debugLog(...) NSLog(__VA_ARGS__)
 #define debugMethod() NSLog(@"%s", __func__)
-#define debug(...)    NSLog(@"%s", __func__, __VA_ARGS__)
+//#define debug(...)    NSLog(@"%s"##__VA_ARGS__, __func__)
+#define debug(fmt, args...) NSLog(@"%s"#fmt, __func__, ##args)
 #else // 发布阶段
 #define debugLog(...)
 #define debugMethod()
@@ -347,7 +348,7 @@ if(!pointer)\
 NSLog(@"[%s]%s is null!", __func__, #pointer);\
 }
 
-
+#define CELLHEIGHT 60
 #endif /* OC使用 */
 //----------------------OC----------------------------
 

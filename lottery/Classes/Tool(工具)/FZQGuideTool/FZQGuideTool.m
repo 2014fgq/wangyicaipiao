@@ -49,7 +49,7 @@
     NSString *newVersion = infoDict[@"CFBundleShortVersionString"];
 
     //判断当前版本与已有版本是否一致
-    if([newVersion isEqualToString:[FZQSaveTool objectForKey:FZQVersion]]){
+    if ([newVersion isEqualToString:[FZQSaveTool objectForKey:FZQVersion]]){
     
         //一致设置窗口的根控制器为主框架控制器
         vc = [[FZQTabBarController alloc] init];

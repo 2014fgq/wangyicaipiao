@@ -83,7 +83,7 @@
     CGFloat btnX;
     CGFloat btnY = 0;
     CGFloat btnW = SCREEN_WIDTH / self.subviews.count;
-    CGFloat btnH = self.height;
+    CGFloat btnH = self.h;
     int i = 0;
     
     for (UIButton *btn in self.subviews) {

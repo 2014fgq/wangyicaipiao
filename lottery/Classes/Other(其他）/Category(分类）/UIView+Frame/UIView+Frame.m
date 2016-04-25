@@ -37,27 +37,27 @@
 }
 
 #pragma mark - width set、get方法实现
-//-(void)setWidth:(CGFloat)width
-//{
-//    CGRect bounds = self.bounds;
-//    bounds.size.width = width;
-//    self.frame = bounds;
-//}
-//
-//-(CGFloat)width
-//{
-//    return self.bounds.size.width;
-//}
-
-#pragma mark - height set、get方法实现
--(void)setHeight:(CGFloat)height
+- (void)setW:(CGFloat)w
 {
     CGRect bounds = self.bounds;
-    bounds.size.height = height;
+    bounds.size.width = w;
+    self.frame = bounds;
+}
+
+-(CGFloat)w
+{
+    return self.bounds.size.width;
+}
+
+#pragma mark - height set、get方法实现
+- (void)setH:(CGFloat)h
+{
+    CGRect bounds = self.bounds;
+    bounds.size.height = h;
     self.bounds = bounds;
 }
 
--(CGFloat)height
+-(CGFloat)h
 {
     return self.bounds.size.height;
 }

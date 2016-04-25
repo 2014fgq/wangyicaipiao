@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "FZQGuideTool.h"
+#import "FQDebug.h"
 
 
 @interface AppDelegate ()
@@ -17,6 +18,11 @@
 
 @implementation AppDelegate
 
+void uncaughtExceptionHandler(NSException *exception) {
+    NSLog(@"CRASH: %@", exception);
+    NSLog(@"Stack Trace: %@", [exception callStackSymbols]);
+    // Internal error reporting
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
@@ -28,6 +34,8 @@
 
     // 3.显示窗口
     [self.window makeKeyAndVisible];
+    
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
     return YES;
 }
