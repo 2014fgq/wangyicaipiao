@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8813E9A91CB6C8AB003E85A4 /* FZQBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8813E9A81CB6C8AB003E85A4 /* FZQBaseCell.m */; };
+		882812971CCF310D00A1FCFC /* FZQHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 882812961CCF310D00A1FCFC /* FZQHistoryTableViewCell.m */; };
 		882B293A1CB571720046A903 /* FZQOwl.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B292F1CB571720046A903 /* FZQOwl.m */; };
 		882B293B1CB571720046A903 /* FZQOwl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882B29301CB571720046A903 /* FZQOwl.xib */; };
 		882B293C1CB571720046A903 /* FZQSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B29331CB571720046A903 /* FZQSwitchView.m */; };
@@ -66,6 +67,7 @@
 		889A81041CAA1E760029A97D /* UIImage+OriginalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A81031CAA1E760029A97D /* UIImage+OriginalImage.m */; };
 		88AC4A6F1CAB56B20016D9E2 /* FZQDiscoveryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AC4A6E1CAB56B20016D9E2 /* FZQDiscoveryViewController.storyboard */; };
 		88AC4A721CAB6D6F0016D9E2 /* FZQAllLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC4A711CAB6D6F0016D9E2 /* FZQAllLotteryViewController.m */; };
+		88B31E911CCFD3E80084298A /* FZQHisSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B31E901CCFD3E80084298A /* FZQHisSettingTableViewController.m */; };
 		88E1454B1CB4B73B00A8A898 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E145471CB4B73B00A8A898 /* MBProgressHUD+XMG.m */; };
 		88E1454C1CB4B73B00A8A898 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88E145481CB4B73B00A8A898 /* MBProgressHUD.bundle */; };
 		88E1454D1CB4B73B00A8A898 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E1454A1CB4B73B00A8A898 /* MBProgressHUD.m */; };
@@ -106,6 +108,8 @@
 		7E77353860E3BC42CA116FDC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8813E9A71CB6C8AB003E85A4 /* FZQBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQBaseCell.h; path = FZQSettingCell/FZQBaseCell.h; sourceTree = "<group>"; };
 		8813E9A81CB6C8AB003E85A4 /* FZQBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQBaseCell.m; path = FZQSettingCell/FZQBaseCell.m; sourceTree = "<group>"; };
+		882812951CCF310D00A1FCFC /* FZQHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQHistoryTableViewCell.h; sourceTree = "<group>"; };
+		882812961CCF310D00A1FCFC /* FZQHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQHistoryTableViewCell.m; sourceTree = "<group>"; };
 		882B29251CB571720046A903 /* FZQLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQLoginViewController.h; sourceTree = "<group>"; };
 		882B29261CB571720046A903 /* FZQLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQLoginViewController.m; sourceTree = "<group>"; };
 		882B29271CB571720046A903 /* Single.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Single.h; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 		88AC4A6E1CAB56B20016D9E2 /* FZQDiscoveryViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FZQDiscoveryViewController.storyboard; path = FZQDiscoveryViewController/FZQDiscoveryViewController.storyboard; sourceTree = "<group>"; };
 		88AC4A701CAB6D6F0016D9E2 /* FZQAllLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQAllLotteryViewController.h; path = FZQAllLotteryViewController/FZQAllLotteryViewController.h; sourceTree = "<group>"; };
 		88AC4A711CAB6D6F0016D9E2 /* FZQAllLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQAllLotteryViewController.m; path = FZQAllLotteryViewController/FZQAllLotteryViewController.m; sourceTree = "<group>"; };
+		88B31E8F1CCFD3E80084298A /* FZQHisSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQHisSettingTableViewController.h; sourceTree = "<group>"; };
+		88B31E901CCFD3E80084298A /* FZQHisSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQHisSettingTableViewController.m; sourceTree = "<group>"; };
 		88E145461CB4B73B00A8A898 /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
 		88E145471CB4B73B00A8A898 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
 		88E145481CB4B73B00A8A898 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -620,6 +626,8 @@
 			children = (
 				8849078A1CAA32FF0057F39C /* FZQHistoryViewController.h */,
 				8849078B1CAA32FF0057F39C /* FZQHistoryViewController.m */,
+				88B31E8F1CCFD3E80084298A /* FZQHisSettingTableViewController.h */,
+				88B31E901CCFD3E80084298A /* FZQHisSettingTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -638,6 +646,8 @@
 		889A80DD1CAA02ED0029A97D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				882812951CCF310D00A1FCFC /* FZQHistoryTableViewCell.h */,
+				882812961CCF310D00A1FCFC /* FZQHistoryTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1078,6 +1088,7 @@
 				882B293C1CB571720046A903 /* FZQSwitchView.m in Sources */,
 				88469C781CCDC3FB008997F2 /* FZQLotteryHallViewModel.m in Sources */,
 				88469C831CCDC76B008997F2 /* FQDiscoveryVM.m in Sources */,
+				882812971CCF310D00A1FCFC /* FZQHistoryTableViewCell.m in Sources */,
 				88E145981CB4B77100A8A898 /* View+MASAdditions.m in Sources */,
 				88AC4A721CAB6D6F0016D9E2 /* FZQAllLotteryViewController.m in Sources */,
 				889A81041CAA1E760029A97D /* UIImage+OriginalImage.m in Sources */,
@@ -1101,6 +1112,7 @@
 				88469C7C1CCDC419008997F2 /* FZQCardCollectionViewCell.m in Sources */,
 				884907C21CAB4AF10057F39C /* UIImage+FZQExtension.m in Sources */,
 				88469C721CCDC3AD008997F2 /* FQHttpOperation.m in Sources */,
+				88B31E911CCFD3E80084298A /* FZQHisSettingTableViewController.m in Sources */,
 				88E145921CB4B77100A8A898 /* MASConstraintMaker.m in Sources */,
 				889A80F71CAA053E0029A97D /* FZQNavController.m in Sources */,
 				887CEC9E1CAF353F00C010FC /* FZQGuideTool.m in Sources */,

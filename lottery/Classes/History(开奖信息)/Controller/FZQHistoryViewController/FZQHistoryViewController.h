@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FZQHistoryVM.h"
 @interface FZQHistoryViewController : UITableViewController
-
+@property (strong, nonatomic) FZQHistoryVM *vm;
 @end

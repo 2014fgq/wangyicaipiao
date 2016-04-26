@@ -22,7 +22,7 @@
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {
     if ([key isEqualToString:@"class"]) {
-        NSLog(@"ignore the key %@" , key);
+        //NSLog(@"ignore the key %@" , key);
     }
 }
 
