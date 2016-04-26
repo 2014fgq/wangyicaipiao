@@ -38,6 +38,7 @@
     
     //设置分隔线形式
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
+
 }
 
 /** 初始化tableView */

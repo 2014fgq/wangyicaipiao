@@ -6,9 +6,10 @@
 //  Copyright © 2016年 FZQ. All rights reserved.
 //
 
+
 #import "FZQHisSettingTableViewController.h"
 
-@interface FZQHisSettingTableViewController ()
+@interface FZQHisSettingTableViewController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -20,6 +21,46 @@
     /** 初始化导航栏 */
     [self setUpNav];
     [self initSubView];
+    
+    /** 添加平移手势 */
+    [self setupPanGesRec];
+}
+
+/** 添加平移手势 */
+-(void)setupPanGesRec
+{   
+    //创建手势
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(pan:)];
+    
+    //设置代理
+    pan.delegate = self;
+    
+    //添加手势
+    [self.view addGestureRecognizer:pan];
+}
+
+/* 上下滑动 */
+- (void)pan:(UIPanGestureRecognizer *)pan
+{
+    //获取偏移量
+    // 返回的是相对于最原始的手指的偏移量
+    CGPoint transP = [pan translationInView:self.view];
+    
+    //设置最小下拉范围
+    transP.y = (transP.y<0.0)?0.0:transP.y;
+    
+    //设置最大下拉范围
+    transP.y = (transP.y>44.0)?44.0:transP.y;
+    NSLog(@"%f",transP.y);
+    
+#warning 下拉后的页面显示
+    
+    
+    // 移动控件
+    self.view.transform = CGAffineTransformMakeTranslation(0, transP.y);
+    
+    //手势结束,清空位移
+    if(pan.state == UIGestureRecognizerStateEnded)self.view.transform = CGAffineTransformIdentity;
 }
 
 /** 初始化导航栏 */
@@ -43,11 +84,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 /* 设置所有数据 */
 - (void)setAllGroups
 {
@@ -69,5 +105,12 @@
     
     //加入到数据组中
     [self.groups addObject:[self setupChildViewWithArray:_array]];
+}
+
+#pragma mark - <UIGestureRecognizerDelegate>
+//是否允许联合手势
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
 }
 @end

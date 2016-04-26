@@ -9,6 +9,7 @@
 #import "FZQDiscoveryCellTableViewCell.h"
 #import "YYWebImage.h"
 #import <UIImageView+WebCache.h>
+
 @implementation FZQDiscoveryCellTableViewCell
 
 - (void)awakeFromNib {
@@ -57,10 +58,20 @@
 - (void)setModel:(FQItmeDiscoveryModel *)model
 {
     //self.imageView.yy_imageURL = [NSURL URLWithString:model.logoUrl];
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.logoUrl]];
     self.textLabel.text = model.title;
     self.detailTextLabel.text = model.desc;
     self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
+    //设置图片
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.logoUrl] placeholderImage:[UIImage imageNamed:@"Default"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+        //判断是否出错
+        if (error != nil) {
+            //下载成功刷新UI
+            self.imageView.image = image;
+        }
+    }];
+
 }
 
 - (void)layoutSubviews

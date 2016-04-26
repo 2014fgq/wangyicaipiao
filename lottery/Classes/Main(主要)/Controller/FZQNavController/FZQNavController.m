@@ -8,6 +8,8 @@
 
 #import "FZQNavController.h"
 
+#import "FZQHisSettingTableViewController.h"
+
 @interface FZQNavController ()<UINavigationControllerDelegate>
 
 /** 手势代理 */
@@ -39,7 +41,7 @@
     navBar.titleTextAttributes = dictM;
     }
 }
-
+UIPanGestureRecognizer *popPan;
 /** 跳转页面导航条设置 */
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
@@ -78,16 +80,14 @@
 #pragma clang diagnostic ignored "-Wundeclared-selector" //取消方法警告
 //#pragma clang diagnostic ignored "-Wdeprecated-declarations"//取消声明警告
         //全局手势
-        UIPanGestureRecognizer *popPan = [[UIPanGestureRecognizer alloc]initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
-#pragma clang diagnostic pop   
-        
+        popPan = [[UIPanGestureRecognizer alloc]initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+#pragma clang diagnostic pop  
+            
         //给控制器的view添加全局返回手势
         [viewController.view addGestureRecognizer:popPan];
 
-    
     //手势与手势代理是在屏幕完全显示时才设置
     //程序创建时，加载所有导航控制器并没有完全显示屏幕，所以没有设置手势及手势代理
-//    NSLog(@"%@\n%@",self.interactivePopGestureRecognizer,self.interactivePopGestureRecognizer.delegate);
         }
 
 #endif

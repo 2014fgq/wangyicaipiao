@@ -13,6 +13,8 @@
 #import "YYWebImage.h"
 #import "FZQDiscoveryCellTableViewCell.h"
 #import "FZQDiscoveryWebViewController.h"
+
+
 @interface FZQDiscoveryViewController ()
 @property (nonatomic) NSInteger seciotn;
 @property (nonatomic) NSInteger row;
@@ -108,7 +110,10 @@
     NSArray *array = self.vm.model[indexPath.section];
     FQItmeDiscoveryModel *model = [FQItmeDiscoveryModel yy_modelWithJSON:[array objectAtIndex:indexPath.row]];
     
+    //生成cell
     FZQDiscoveryCellTableViewCell *cell = [FZQDiscoveryCellTableViewCell DiscoveryCellWithTableView:tableView];
+    
+    //根据model设置cell
     cell.model = model;
     
     return cell;
