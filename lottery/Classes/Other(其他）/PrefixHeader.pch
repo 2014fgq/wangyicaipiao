@@ -348,11 +348,11 @@ if(!pointer)\
 NSLog(@"[%s]%s is null!", __func__, #pointer);\
 }
 
-#define CELLHEIGHT 60
+#define CELLHEIGHT 100
 #endif /* OC使用 */
 //----------------------OC----------------------------
 
-
+#define BACKGROUPCOLOR [UIColor colorWithRed:247/255.0 green:242/255.0 blue:230/255.0 alpha:1]
 
 #endif /* PrefixHeader_pch */
 

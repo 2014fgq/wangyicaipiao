@@ -11,6 +11,8 @@
 #import "MJRefresh.h"
 #import "YYModel.h"
 #import "YYWebImage.h"
+#import "FZQDiscoveryCellTableViewCell.h"
+#import "FZQDiscoveryWebViewController.h"
 @interface FZQDiscoveryViewController ()
 @property (nonatomic) NSInteger seciotn;
 @property (nonatomic) NSInteger row;
@@ -24,6 +26,7 @@
     [super viewDidLoad];
     [self initNoti];
     [self initData];
+    self.view.backgroundColor = BACKGROUPCOLOR;
 }
 
 - (void)initData
@@ -47,7 +50,6 @@
 }
 
 - (void)loadingLatestDatas :(NSNotification *)noti {
-    [self FQCalcSectionandRow];
     [self.tableView reloadData];
     [self.tableView.mj_header endRefreshing];
 }
@@ -59,8 +61,20 @@
 #pragma mark - UITableViewDelegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSArray *array = self.vm.model[indexPath.section];
+    FQItmeDiscoveryModel *model = [FQItmeDiscoveryModel yy_modelWithJSON:[array objectAtIndex:indexPath.row]];
     /** 跳转界面 */
-    [self push];
+//    FZQDiscoveryCellTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    FQItmeDiscoveryModel *model = cell.model;
+    if (![model.jumpUrl containsString:@"ntescaipiao"]) {
+        FZQDiscoveryWebViewController *webVC = [[FZQDiscoveryWebViewController alloc] init];
+        webVC.model = model;
+        webVC.title = @"网易彩票";
+        [self.navigationController pushViewController:webVC animated:YES];
+    }
+    else {
+        [self push];
+    }
 }
 
 /* 跳转界面 */
@@ -73,34 +87,29 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
 
 #pragma mark - UITableView Datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.seciotn;
+    return self.vm.model.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.row;
+    NSArray *arr = self.vm.model[section];
+    return arr.count;
 }
 
-//"description":"免费送200元京东卡","groupFlag":true,"jumpUrl":"http://game.cp.163.com/nfop/tgnzjhfx/index.htm","logoUrl":"http://pimg1.126.net/caipiao_info/images/headFigure/appFigureConfig/1461236233028_1.png","promotionImgTime":"","promotionUrl":"","showAlert":true,"showAlertTime":"2015-08-22 13:20:20.0,2019-06-30 13:20:23.0","title":"网易棋牌"
+//"description":"免费送200元京东卡","groupFlag":true,"jumpUrl":"http://game.cp.163.com/nfop/tgnzjhfx/index.htm","logoUrl":"http://pimg1.126.net/caipiao_info/images/headFigure/appFigureConfig/1461236233028_1.png","promotionImgTime":"","promotionUrl":"","showAlert":true,"showAlertTime":"2015-08-22 13:20:20.0,2019-06-30 13:20:23.0","title":"网易棋牌"sdsadsa
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIdentifier = @"Cell";
+    NSArray *array = self.vm.model[indexPath.section];
+    FQItmeDiscoveryModel *model = [FQItmeDiscoveryModel yy_modelWithJSON:[array objectAtIndex:indexPath.row]];
     
-    FQItmeDiscoveryModel *model = [FQItmeDiscoveryModel yy_modelWithJSON:[self.vm.model.backUpItems objectAtIndex:indexPath.section+indexPath.row]];
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    
-    if(cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-    }
-    
-    cell.imageView.yy_imageURL = [NSURL URLWithString:model.logoUrl];
-    cell.textLabel.text = model.title;
-    cell.detailTextLabel.text = model.desc;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    FZQDiscoveryCellTableViewCell *cell = [FZQDiscoveryCellTableViewCell DiscoveryCellWithTableView:tableView];
+    cell.model = model;
     
     return cell;
 }
@@ -112,7 +121,7 @@
 {
     self.seciotn = 0;
     self.row = 0;
-    for (NSObject *obj in self.vm.model.backUpItems) {
+    for (NSObject *obj in self.vm.model) {
         FQItmeDiscoveryModel *model = [FQItmeDiscoveryModel yy_modelWithJSON:obj];
         if(model.groupFlag)
             self.seciotn++;

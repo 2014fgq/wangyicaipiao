@@ -10,7 +10,7 @@
 #import "FQDiscoveryModel.h"
 
 @interface FQDiscoveryVM : NSObject
-@property (strong, nonatomic) FQDiscoveryModel *model;
+@property (strong, nonatomic) NSArray *model;
 
 - (void)getLatestDatas;
 @end

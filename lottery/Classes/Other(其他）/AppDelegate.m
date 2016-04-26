@@ -35,8 +35,10 @@ void uncaughtExceptionHandler(NSException *exception) {
     // 3.显示窗口
     [self.window makeKeyAndVisible];
     
-    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    [self.window setBackgroundColor:BACKGROUPCOLOR];
     
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+
     return YES;
 }
 
