@@ -8,8 +8,8 @@
 
 #import "FQDiscoveryVM.h"
 #import "FQHttpOperation.h"
-
 #import "YYModel.h"
+
 @implementation FQDiscoveryVM
 - (void)getLatestDatas
 {

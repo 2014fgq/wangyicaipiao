@@ -10,7 +10,7 @@
 
 #import "FZQGuideTool.h"
 #import "FQDebug.h"
-
+#import "FLEXManager.h"
 
 @interface AppDelegate ()
 
@@ -38,6 +38,8 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self.window setBackgroundColor:BACKGROUPCOLOR];
     
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
+    [[FLEXManager sharedManager] showExplorer];
 
     return YES;
 }

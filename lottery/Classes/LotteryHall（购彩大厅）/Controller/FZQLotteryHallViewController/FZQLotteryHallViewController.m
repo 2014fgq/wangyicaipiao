@@ -12,6 +12,9 @@
 #import "FZQCardCollectionViewCell.h"
 #import "YYModel.h"
 #import "MJRefresh.h"
+#import "FZQLotteryHV.h"
+#define LOTTERYHEADER @"lottery_header"
+#define LOTTERYFOOTER @"lottery_footer"
 
 @interface FZQLotteryHallViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) UICollectionView *collectionView;
@@ -57,6 +60,7 @@
     flowLayout.headerReferenceSize = CGSizeMake(0, 0);
     //flowlaout的属性，横向滑动
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    //[flowLayout setHeaderReferenceSize:CGSizeMake(SCREEN_WIDTH, 300)];
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
     self.collectionView = collectionView;
@@ -64,9 +68,11 @@
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
     [self.collectionView registerClass:[FZQCardCollectionViewCell class] forCellWithReuseIdentifier:CardID];
+    [self.collectionView registerClass:[FZQLotteryHV class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:LOTTERYHEADER];
+    [self.collectionView registerClass:[FZQLotteryHV class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:LOTTERYFOOTER];
     [self.view addSubview:self.collectionView];
     self.collectionView.backgroundColor = [UIColor blackColor];
-    //self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = BACKGROUPCOLOR;
     
     //刷新动作
     self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(collectionViewHeaderRefresh)];
@@ -146,6 +152,35 @@
     return 0.f;
 }
 
+//返回头headerView的大小
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+    CGSize size = {SCREEN_WIDTH, 300};
+    return size;
+}
+
+// The view that is returned must be retrieved from a call to -dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    
+    NSString *reuseIdentifier;
+    if ([kind isEqualToString: UICollectionElementKindSectionHeader]){
+        reuseIdentifier = LOTTERYHEADER;
+    }else{
+        reuseIdentifier = LOTTERYFOOTER;
+    }
+    
+    FZQLotteryHV *view =  [collectionView dequeueReusableSupplementaryViewOfKind:kind   withReuseIdentifier:reuseIdentifier   forIndexPath:indexPath];
+    
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]){
+        view.label.text = [NSString stringWithFormat:@"这是header:%ld",(long)indexPath.section];
+        view.label.font = [UIFont systemFontOfSize:20];
+    }
+    else if ([kind isEqualToString:UICollectionElementKindSectionFooter]){
+        view.backgroundColor = [UIColor lightGrayColor];
+        view.label.text = [NSString stringWithFormat:@"这是footer:%ld",(long)indexPath.section];
+    }
+    return view;
+}
+
 #pragma mark - <UICollectionViewDataSource>代理
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -177,7 +212,7 @@
         FQCard *card = [FQCard yy_modelWithJSON:object];
         [card valueForKey:@"attribute"] ? ++nullNum : 0;
     }
-    debug("null num = %d", nullNum);
+    debug("null num = %ld", (long)nullNum);
 }
 
 - (void)ShowData
