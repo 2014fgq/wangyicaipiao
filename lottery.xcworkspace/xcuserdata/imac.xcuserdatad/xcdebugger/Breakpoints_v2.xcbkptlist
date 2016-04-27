@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "lottery/Classes/LotteryHall&#xff08;&#x8d2d;&#x5f69;&#x5927;&#x5385;&#xff09;/Controller/FZQLotteryHallViewController/FZQLotteryHallViewController.m"
-            timestampString = "483421181.405808"
+            timestampString = "483478757.791807"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "200"
@@ -69,6 +69,38 @@
             continueAfterRunningActions = "Yes"
             scope = "0"
             stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lottery/Classes/LotteryHall&#xff08;&#x8d2d;&#x5f69;&#x5927;&#x5385;&#xff09;/Controller/FZQLotteryHallViewController/FZQLotteryHallViewController.m"
+            timestampString = "483478757.791807"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
+            landmarkName = "-bannerView:didSelectAtIndex:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lottery/Classes/LotteryHall&#xff08;&#x8d2d;&#x5f69;&#x5927;&#x5385;&#xff09;/Controller/FZQLotteryHallViewController/FZQLotteryHallViewController.m"
+            timestampString = "483478757.791807"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "-collectionView:viewForSupplementaryElementOfKind:atIndexPath:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

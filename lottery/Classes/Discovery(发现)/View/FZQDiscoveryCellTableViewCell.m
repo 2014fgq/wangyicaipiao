@@ -29,10 +29,8 @@
         cell.separatorInset = UIEdgeInsetsZero;
     }
     
-    //[cell setSelectionStyle:UITableViewCellSelectionStyleGray];
-    //cell.contentView.backgroundColor = [UIColor grayColor];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.backgroundColor = CLEARCOLOR;
+    //cell.backgroundColor = CLEARCOLOR;
     return cell;
 }
 

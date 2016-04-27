@@ -146,6 +146,8 @@
 		88B31F861CCFFE930084298A /* FLEXHierarchyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B31F381CCFFE930084298A /* FLEXHierarchyTableViewController.m */; };
 		88B31F871CCFFE930084298A /* FLEXImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B31F3A1CCFFE930084298A /* FLEXImagePreviewViewController.m */; };
 		88B31F8A1CD028AC0084298A /* FZQLotteryHV.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B31F891CD028AC0084298A /* FZQLotteryHV.m */; };
+		88B31F911CD08C260084298A /* GGBannerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B31F8E1CD08C260084298A /* GGBannerCollectionViewCell.m */; };
+		88B31F921CD08C260084298A /* GGBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B31F901CD08C260084298A /* GGBannerView.m */; };
 		88E1454B1CB4B73B00A8A898 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E145471CB4B73B00A8A898 /* MBProgressHUD+XMG.m */; };
 		88E1454C1CB4B73B00A8A898 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88E145481CB4B73B00A8A898 /* MBProgressHUD.bundle */; };
 		88E1454D1CB4B73B00A8A898 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E1454A1CB4B73B00A8A898 /* MBProgressHUD.m */; };
@@ -459,6 +461,10 @@
 		88B31F3A1CCFFE930084298A /* FLEXImagePreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXImagePreviewViewController.m; sourceTree = "<group>"; };
 		88B31F881CD028AC0084298A /* FZQLotteryHV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQLotteryHV.h; sourceTree = "<group>"; };
 		88B31F891CD028AC0084298A /* FZQLotteryHV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQLotteryHV.m; sourceTree = "<group>"; };
+		88B31F8D1CD08C260084298A /* GGBannerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBannerCollectionViewCell.h; sourceTree = "<group>"; };
+		88B31F8E1CD08C260084298A /* GGBannerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBannerCollectionViewCell.m; sourceTree = "<group>"; };
+		88B31F8F1CD08C260084298A /* GGBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBannerView.h; sourceTree = "<group>"; };
+		88B31F901CD08C260084298A /* GGBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBannerView.m; sourceTree = "<group>"; };
 		88E145461CB4B73B00A8A898 /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
 		88E145471CB4B73B00A8A898 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
 		88E145481CB4B73B00A8A898 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -798,7 +804,8 @@
 		889A80CD1CAA02ED0029A97D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				88B31E921CCFFE930084298A /* Classes */,
+				88B31F931CD12BD80084298A /* Base */,
+				88B31F8B1CD08B4F0084298A /* ThirdLibray */,
 				882B29231CB571720046A903 /* login(登录） */,
 				884544B81CB47E1A000BBC51 /* Setting(设置） */,
 				889A80EF1CAA02ED0029A97D /* Tool(工具) */,
@@ -1040,7 +1047,7 @@
 			path = "Tool(工具)";
 			sourceTree = "<group>";
 		};
-		88B31E921CCFFE930084298A /* Classes */ = {
+		88B31E921CCFFE930084298A /* FLEX */ = {
 			isa = PBXGroup;
 			children = (
 				88B31E931CCFFE930084298A /* Editing */,
@@ -1056,6 +1063,7 @@
 				88B31F251CCFFE930084298A /* Utility */,
 				88B31F341CCFFE930084298A /* ViewHierarchy */,
 			);
+			name = FLEX;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1304,6 +1312,41 @@
 				88B31F3A1CCFFE930084298A /* FLEXImagePreviewViewController.m */,
 			);
 			path = ViewHierarchy;
+			sourceTree = "<group>";
+		};
+		88B31F8B1CD08B4F0084298A /* ThirdLibray */ = {
+			isa = PBXGroup;
+			children = (
+				88B31F8C1CD08C260084298A /* GGBannerView */,
+				88B31E921CCFFE930084298A /* FLEX */,
+			);
+			name = ThirdLibray;
+			sourceTree = "<group>";
+		};
+		88B31F8C1CD08C260084298A /* GGBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				88B31F8D1CD08C260084298A /* GGBannerCollectionViewCell.h */,
+				88B31F8E1CD08C260084298A /* GGBannerCollectionViewCell.m */,
+				88B31F8F1CD08C260084298A /* GGBannerView.h */,
+				88B31F901CD08C260084298A /* GGBannerView.m */,
+			);
+			path = GGBannerView;
+			sourceTree = "<group>";
+		};
+		88B31F931CD12BD80084298A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				88B31F941CD12BE20084298A /* VC */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		88B31F941CD12BE20084298A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 		88E144E11CB4B53700A8A898 /* Lib(第三方框架) */ = {
@@ -1573,6 +1616,7 @@
 			files = (
 				882B298C1CB57A4C0046A903 /* FZQTextView.m in Sources */,
 				882B298B1CB57A060046A903 /* FZQLoginView.m in Sources */,
+				88B31F911CD08C260084298A /* GGBannerCollectionViewCell.m in Sources */,
 				88B31F831CCFFE930084298A /* FLEXRuntimeUtility.m in Sources */,
 				88B31F431CCFFE930084298A /* FLEXArgumentInputStructView.m in Sources */,
 				88B31F551CCFFE930084298A /* FLEXTableContentViewController.m in Sources */,
@@ -1627,6 +1671,7 @@
 				889A80FA1CAA05790029A97D /* FZQTabBarController.m in Sources */,
 				884544CB1CB4ACCB000BBC51 /* FZQArrowItem.m in Sources */,
 				88B31F841CCFFE930084298A /* FLEXUtility.m in Sources */,
+				88B31F921CD08C260084298A /* GGBannerView.m in Sources */,
 				88B31F731CCFFE930084298A /* FLEXDictionaryExplorerViewController.m in Sources */,
 				889A80F01CAA02ED0029A97D /* AppDelegate.m in Sources */,
 				88B31F4E1CCFFE930084298A /* FLEXExplorerViewController.m in Sources */,

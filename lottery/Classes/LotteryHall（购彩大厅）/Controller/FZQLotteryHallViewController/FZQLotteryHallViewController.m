@@ -13,15 +13,20 @@
 #import "YYModel.h"
 #import "MJRefresh.h"
 #import "FZQLotteryHV.h"
+#import "GGBannerView.h"
+#import "YYWebImage.h"
+#import "FZQDiscoveryWebViewController.h"
+
 #define LOTTERYHEADER @"lottery_header"
 #define LOTTERYFOOTER @"lottery_footer"
 
-@interface FZQLotteryHallViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface FZQLotteryHallViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, GGBannerViewDelegate>
 @property (weak, nonatomic) UICollectionView *collectionView;
-
+@property (nonatomic, strong) GGBannerView * bannerView;
 @property (strong, nonatomic) NSString *version;
-@end
 
+@end
+static CGFloat const kBannerHeightWidthRatio = 400.0 / 720.0;
 @implementation FZQLotteryHallViewController
 
 #pragma mark - life cycle
@@ -36,6 +41,24 @@
     
     //初始化数据
     [self SetData];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    //导航栏隐藏
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    //打开定时器自动滚动
+    self.bannerView.interval = 4;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    //显示导航栏
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    //关闭定时器自动滚动
+    self.bannerView.interval = 0;
 }
 
 - (void)SetData
@@ -77,6 +100,26 @@
     //刷新动作
     self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(collectionViewHeaderRefresh)];
     
+    //合入头部图片滚动功能
+    NSInteger bannerViewWidth = [UIScreen mainScreen].bounds.size.width;
+    NSInteger bannerViewHeight = kBannerHeightWidthRatio * SCREEN_WIDTH;
+    GGBannerView *bannerView = [[GGBannerView alloc]initWithFrame:CGRectMake(0, 0, bannerViewWidth, bannerViewHeight)];
+    self.bannerView = bannerView;
+    self.bannerView.delegate = self;
+}
+
+- (void)refreshWholeView {
+    //刷新列表
+    [self.collectionView reloadData];
+    [self.collectionView.mj_header endRefreshing];
+    //刷新Banner
+    NSMutableArray * bannerUrlArray = [NSMutableArray arrayWithCapacity:self.vm.model.adInfo.count];
+    for (FQAdInfo * model in self.vm.model.adInfo) {
+        if (nil != model.picture) {
+            [bannerUrlArray addObject:model.picture];
+        }
+    }
+    [self.bannerView configBanner:bannerUrlArray];
 }
 
 - (void)collectionViewHeaderRefresh
@@ -95,8 +138,8 @@
         }
     }
     self.cardList = mutabarray;
-    [self.collectionView reloadData];
-    [self.collectionView.mj_header endRefreshing];
+    [self refreshWholeView];
+
 }
 
 - (void)loadingLatestDatasFail :(NSNotification *)noti {
@@ -171,8 +214,10 @@
     FZQLotteryHV *view =  [collectionView dequeueReusableSupplementaryViewOfKind:kind   withReuseIdentifier:reuseIdentifier   forIndexPath:indexPath];
     
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]){
-        view.label.text = [NSString stringWithFormat:@"这是header:%ld",(long)indexPath.section];
-        view.label.font = [UIFont systemFontOfSize:20];
+        view.backgroundColor = BACKGROUPCOLOR;
+        [view addSubview:self.bannerView];
+        //view.label.text = [NSString stringWithFormat:@"这是header:%ld",(long)indexPath.section];
+        //view.label.font = [UIFont systemFontOfSize:20];
     }
     else if ([kind isEqualToString:UICollectionElementKindSectionFooter]){
         view.backgroundColor = [UIColor lightGrayColor];
@@ -205,6 +250,32 @@
     return cell;
 }
 
+#pragma mark - Banner delegate
+- (void)imageView:(UIImageView *)imageView loadImageForUrl:(NSString *)url {
+    imageView.yy_imageURL = [NSURL URLWithString:url];
+}
+
+-(void)bannerView:(GGBannerView *)bannerView didSelectAtIndex:(NSUInteger)index {
+    if (index < self.vm.model.adInfo.count) {
+        FQAdInfo *model = self.vm.model.adInfo[index];
+        if(model.clickHref) {
+            FZQDiscoveryWebViewController *webVC = [[FZQDiscoveryWebViewController alloc] init];
+            webVC.url = model.clickHref;
+            webVC.title = @"网易彩票";
+            [self.navigationController pushViewController:webVC animated:YES];
+        }
+//        if (banner.yaProduct) {
+//            //跳转到商品详情
+//            SoupDetailViewController *soupDetailVC = [[SoupDetailViewController alloc] init];
+//            //妈了个叉，服务器图片不给，还要用Banner的图片。傻逼。
+//            banner.yaProduct.productPictures = banner.bannerPictures;
+//            soupDetailVC.product = banner.yaProduct;
+//            [self.navigationController pushViewController:soupDetailVC animated:YES];
+//        }
+    }
+}
+
+#pragma mark - test-debug method
 - (void)testCalcNullData
 {
     NSInteger nullNum = 0;

@@ -11,3 +11,4 @@
 @interface FZQLotteryHV : UICollectionReusableView
 @property (strong, nonatomic) UILabel *label;
 @end
+
