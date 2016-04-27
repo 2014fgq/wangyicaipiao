@@ -70,7 +70,7 @@
 //    FQItmeDiscoveryModel *model = cell.model;
     if (![model.jumpUrl containsString:@"ntescaipiao"]) {
         FZQDiscoveryWebViewController *webVC = [[FZQDiscoveryWebViewController alloc] init];
-        webVC.model = model;
+        webVC.url = model.jumpUrl;
         webVC.title = @"网易彩票";
         [self.navigationController pushViewController:webVC animated:YES];
     }

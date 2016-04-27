@@ -16,6 +16,10 @@
              @"layout" : @"card.layout"};
 }
 
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"adInfo" : [FQAdInfo class]};
+}
+
 @end
 
 @implementation FQSubAttribute
@@ -23,5 +27,9 @@
 @end
 
 @implementation FQCard
+
+@end
+
+@implementation FQAdInfo
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FQDiscoveryModel.h"
+
 @interface FZQDiscoveryWebViewController : UIViewController
-@property (strong, nonatomic) FQItmeDiscoveryModel *model;
+@property (strong, nonatomic) NSString *url;
 @end

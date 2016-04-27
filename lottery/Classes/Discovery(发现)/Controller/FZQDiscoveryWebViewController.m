@@ -34,7 +34,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    NSURL *url = [NSURL URLWithString:_model.jumpUrl];
+    NSURL *url = [NSURL URLWithString:self.url];
     NSURLRequest *request=[NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
     //[_webView loadHTMLString:_model.jumpUrl baseURL:nil];

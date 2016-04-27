@@ -11,4 +11,6 @@
 @interface FZQLotteryHallViewController : UIViewController
 @property (strong, nonatomic) FZQLotteryHallViewModel *vm;
 @property (strong, nonatomic) NSArray *cardList;
+
+
 @end

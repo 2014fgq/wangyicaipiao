@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class FQCard;
+@class FQAdInfo;
 @interface FZQLotteryHallModel : NSObject
 @property (strong, nonatomic) NSArray *adInfo;
 @property (strong, nonatomic) NSArray *cardList;
@@ -16,9 +17,9 @@
 @end
 
 @interface FQAdInfo : NSObject
-@property (strong, nonatomic) NSURL *clickHref;
-@property (strong, nonatomic) NSURL *newPicture;
-@property (strong, nonatomic) NSURL *picture;
+@property (strong, nonatomic) NSString *clickHref;
+//@property (strong, nonatomic) NSString *newPicture;
+@property (strong, nonatomic) NSString *picture;
 @end
 
 @interface FQSubAttribute : NSObject
