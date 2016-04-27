@@ -13,7 +13,6 @@
 #import "YYWebImage.h"
 #import "FZQDiscoveryCellTableViewCell.h"
 #import "FZQDiscoveryWebViewController.h"
-#import <UIImageView+WebCache.h>
 
 @interface FZQDiscoveryViewController ()
 @property (nonatomic) NSInteger seciotn;
@@ -28,9 +27,12 @@
     [super viewDidLoad];
     [self initNoti];
     [self initData];
-    self.view.backgroundColor = BACKGROUPCOLOR;
+    
+    /****** 初始化tableView *****/
+    self.tableView.backgroundColor = BACKGROUPCOLOR;//背景颜色
 }
 
+#pragma mark - init
 - (void)initData
 {
     self.vm = [FQDiscoveryVM alloc];
@@ -123,16 +125,6 @@
 
     //根据model设置cell
     cell.model = model;
-    
-    //设置图片
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:model.logoUrl] placeholderImage:[UIImage imageNamed:@"Default"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        
-        //判断是否出错
-        if (error == nil) {
-            //下载成功刷新UI
-            [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
-        }
-    }];
     
     return cell;
 }

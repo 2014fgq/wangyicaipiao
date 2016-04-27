@@ -6,7 +6,6 @@
 //  Copyright © 2016年 FZQ. All rights reserved.
 //
 
-#warning 自动布局第三方框架与frame分类冲突,经典矛盾：frame与自动约束的爱恨情仇
 
 #import <UIKit/UIKit.h>
 

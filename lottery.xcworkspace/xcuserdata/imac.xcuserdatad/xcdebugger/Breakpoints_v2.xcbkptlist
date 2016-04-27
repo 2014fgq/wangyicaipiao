@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "lottery/Classes/Discovery(&#x53d1;&#x73b0;)/Controller/FZQDiscoveryViewController/FZQDiscoveryViewController.m"
-            timestampString = "483402313.300498"
+            timestampString = "483450072.824857"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
