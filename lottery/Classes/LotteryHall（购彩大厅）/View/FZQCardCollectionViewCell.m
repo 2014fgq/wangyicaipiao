@@ -38,6 +38,7 @@
     self.detailLabel.text = self.model.attribute.cardDesc;
     self.detailLabel.textColor = [UIColor grayColor];
     self.detailLabel.adjustsFontSizeToFitWidth = true;
+    
     if([self.model.attribute.activityColor isEqualToString:@"red"])
     {
         self.detailLabel.backgroundColor = [UIColor redColor];
