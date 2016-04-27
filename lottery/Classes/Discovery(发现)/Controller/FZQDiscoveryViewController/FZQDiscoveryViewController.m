@@ -13,7 +13,7 @@
 #import "YYWebImage.h"
 #import "FZQDiscoveryCellTableViewCell.h"
 #import "FZQDiscoveryWebViewController.h"
-
+#import <UIImageView+WebCache.h>
 
 @interface FZQDiscoveryViewController ()
 @property (nonatomic) NSInteger seciotn;
@@ -97,6 +97,7 @@
 #pragma mark - UITableView Datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
     return self.vm.model.count;
 }
 
@@ -105,16 +106,33 @@
     return arr.count;
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
+}
 //"description":"免费送200元京东卡","groupFlag":true,"jumpUrl":"http://game.cp.163.com/nfop/tgnzjhfx/index.htm","logoUrl":"http://pimg1.126.net/caipiao_info/images/headFigure/appFigureConfig/1461236233028_1.png","promotionImgTime":"","promotionUrl":"","showAlert":true,"showAlertTime":"2015-08-22 13:20:20.0,2019-06-30 13:20:23.0","title":"网易棋牌"sdsadsa
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     NSArray *array = self.vm.model[indexPath.section];
     FQItmeDiscoveryModel *model = [FQItmeDiscoveryModel yy_modelWithJSON:[array objectAtIndex:indexPath.row]];
     
     //生成cell
     FZQDiscoveryCellTableViewCell *cell = [FZQDiscoveryCellTableViewCell DiscoveryCellWithTableView:tableView];
-    
+
     //根据model设置cell
     cell.model = model;
+    
+    //设置图片
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:model.logoUrl] placeholderImage:[UIImage imageNamed:@"Default"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+        //判断是否出错
+        if (error == nil) {
+            //下载成功刷新UI
+            [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+        }
+    }];
     
     return cell;
 }

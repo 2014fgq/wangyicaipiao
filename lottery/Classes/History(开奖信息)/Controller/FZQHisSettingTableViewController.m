@@ -6,6 +6,7 @@
 //  Copyright © 2016年 FZQ. All rights reserved.
 //
 
+static CGFloat const maxInset = 60.0;
 
 #import "FZQHisSettingTableViewController.h"
 
@@ -24,6 +25,7 @@
     
     /** 添加平移手势 */
     [self setupPanGesRec];
+    
 }
 
 /** 添加平移手势 */
@@ -44,23 +46,15 @@
 {
     //获取偏移量
     // 返回的是相对于最原始的手指的偏移量
-    CGPoint transP = [pan translationInView:self.view];
+    CGFloat transY = [pan translationInView:self.view].y;
+    transY = (transY<-maxInset)?-maxInset:transY;//设置最小下拉范围 
+    transY = (transY>maxInset)?maxInset:transY;//设置最大下拉范围
     
-    //设置最小下拉范围
-    transP.y = (transP.y<0.0)?0.0:transP.y;
+    // 设置边距
+    self.tableView.contentInset = UIEdgeInsetsMake(transY, 0, 0, 0);
     
-    //设置最大下拉范围
-    transP.y = (transP.y>44.0)?44.0:transP.y;
-    NSLog(@"%f",transP.y);
-    
-#warning 下拉后的页面显示
-    
-    
-    // 移动控件
-    self.view.transform = CGAffineTransformMakeTranslation(0, transP.y);
-    
-    //手势结束,清空位移
-    if(pan.state == UIGestureRecognizerStateEnded)self.view.transform = CGAffineTransformIdentity;
+    //手势结束,清空边距
+    if(pan.state == UIGestureRecognizerStateEnded)self.tableView.contentInset = UIEdgeInsetsZero;
 }
 
 /** 初始化导航栏 */

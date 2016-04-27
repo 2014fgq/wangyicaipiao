@@ -41,7 +41,7 @@
     navBar.titleTextAttributes = dictM;
     }
 }
-UIPanGestureRecognizer *popPan;
+
 /** 跳转页面导航条设置 */
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
@@ -80,7 +80,7 @@ UIPanGestureRecognizer *popPan;
 #pragma clang diagnostic ignored "-Wundeclared-selector" //取消方法警告
 //#pragma clang diagnostic ignored "-Wdeprecated-declarations"//取消声明警告
         //全局手势
-        popPan = [[UIPanGestureRecognizer alloc]initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+        UIPanGestureRecognizer *popPan = [[UIPanGestureRecognizer alloc]initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
 #pragma clang diagnostic pop  
             
         //给控制器的view添加全局返回手势
