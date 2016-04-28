@@ -20,13 +20,15 @@
 #define LOTTERYHEADER @"lottery_header"
 #define LOTTERYFOOTER @"lottery_footer"
 
+#define HEADERVIEWHEIGH 150
+
 @interface FZQLotteryHallViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, GGBannerViewDelegate>
 @property (weak, nonatomic) UICollectionView *collectionView;
 @property (nonatomic, strong) GGBannerView * bannerView;
 @property (strong, nonatomic) NSString *version;
 
 @end
-static CGFloat const kBannerHeightWidthRatio = 400.0 / 720.0;
+
 @implementation FZQLotteryHallViewController
 
 #pragma mark - life cycle
@@ -46,8 +48,6 @@ static CGFloat const kBannerHeightWidthRatio = 400.0 / 720.0;
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    //导航栏隐藏
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
     //打开定时器自动滚动
     self.bannerView.interval = 4;
 }
@@ -55,8 +55,6 @@ static CGFloat const kBannerHeightWidthRatio = 400.0 / 720.0;
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-    //显示导航栏
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
     //关闭定时器自动滚动
     self.bannerView.interval = 0;
 }
@@ -80,10 +78,9 @@ static CGFloat const kBannerHeightWidthRatio = 400.0 / 720.0;
     //设置单元格的尺寸
     //flowLayout.itemSize = CGSizeMake(10, 10);
     //设置头视图高度
-    flowLayout.headerReferenceSize = CGSizeMake(0, 0);
+    flowLayout.headerReferenceSize = CGSizeMake(self.navigationController.view.x, self.navigationController.view.y);
     //flowlaout的属性，横向滑动
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    //[flowLayout setHeaderReferenceSize:CGSizeMake(SCREEN_WIDTH, 300)];
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
     self.collectionView = collectionView;
@@ -93,8 +90,9 @@ static CGFloat const kBannerHeightWidthRatio = 400.0 / 720.0;
     [self.collectionView registerClass:[FZQCardCollectionViewCell class] forCellWithReuseIdentifier:CardID];
     [self.collectionView registerClass:[FZQLotteryHV class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:LOTTERYHEADER];
     [self.collectionView registerClass:[FZQLotteryHV class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:LOTTERYFOOTER];
-    [self.view addSubview:self.collectionView];
     self.collectionView.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:self.collectionView];
+    //设置页面底色
     self.view.backgroundColor = BACKGROUPCOLOR;
     
     //刷新动作
@@ -102,7 +100,7 @@ static CGFloat const kBannerHeightWidthRatio = 400.0 / 720.0;
     
     //合入头部图片滚动功能
     NSInteger bannerViewWidth = [UIScreen mainScreen].bounds.size.width;
-    NSInteger bannerViewHeight = kBannerHeightWidthRatio * SCREEN_WIDTH;
+    NSInteger bannerViewHeight = HEADERVIEWHEIGH;
     GGBannerView *bannerView = [[GGBannerView alloc]initWithFrame:CGRectMake(0, 0, bannerViewWidth, bannerViewHeight)];
     self.bannerView = bannerView;
     self.bannerView.delegate = self;
@@ -197,7 +195,7 @@ static CGFloat const kBannerHeightWidthRatio = 400.0 / 720.0;
 
 //返回头headerView的大小
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    CGSize size = {SCREEN_WIDTH, 300};
+    CGSize size = {SCREEN_WIDTH, 2.3*HEADERVIEWHEIGH};
     return size;
 }
 
@@ -264,14 +262,6 @@ static CGFloat const kBannerHeightWidthRatio = 400.0 / 720.0;
             webVC.title = @"网易彩票";
             [self.navigationController pushViewController:webVC animated:YES];
         }
-//        if (banner.yaProduct) {
-//            //跳转到商品详情
-//            SoupDetailViewController *soupDetailVC = [[SoupDetailViewController alloc] init];
-//            //妈了个叉，服务器图片不给，还要用Banner的图片。傻逼。
-//            banner.yaProduct.productPictures = banner.bannerPictures;
-//            soupDetailVC.product = banner.yaProduct;
-//            [self.navigationController pushViewController:soupDetailVC animated:YES];
-//        }
     }
 }
 

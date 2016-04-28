@@ -39,7 +39,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
-    [[FLEXManager sharedManager] showExplorer];
+    //[[FLEXManager sharedManager] showExplorer];
 
     return YES;
 }
