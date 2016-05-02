@@ -32,6 +32,13 @@
     self.tableView.backgroundColor = BACKGROUPCOLOR;//背景颜色
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
+}
+
 #pragma mark - init
 - (void)initData
 {
@@ -68,8 +75,6 @@
     NSArray *array = self.vm.model[indexPath.section];
     FQItmeDiscoveryModel *model = [FQItmeDiscoveryModel yy_modelWithJSON:[array objectAtIndex:indexPath.row]];
     /** 跳转界面 */
-//    FZQDiscoveryCellTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-//    FQItmeDiscoveryModel *model = cell.model;
     if (![model.jumpUrl containsString:@"ntescaipiao"]) {
         FZQDiscoveryWebViewController *webVC = [[FZQDiscoveryWebViewController alloc] init];
         webVC.url = model.jumpUrl;
@@ -96,6 +101,11 @@
     return 60;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 0.00001f;
+}
+
 #pragma mark - UITableView Datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -108,12 +118,6 @@
     return arr.count;
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    [self.tableView reloadData];
-}
 //"description":"免费送200元京东卡","groupFlag":true,"jumpUrl":"http://game.cp.163.com/nfop/tgnzjhfx/index.htm","logoUrl":"http://pimg1.126.net/caipiao_info/images/headFigure/appFigureConfig/1461236233028_1.png","promotionImgTime":"","promotionUrl":"","showAlert":true,"showAlertTime":"2015-08-22 13:20:20.0,2019-06-30 13:20:23.0","title":"网易棋牌"sdsadsa
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -128,8 +132,6 @@
     
     return cell;
 }
-
-#pragma mark - UITableView Delegate methods
 
 #pragma mark - private method
 - (void) FQCalcSectionandRow

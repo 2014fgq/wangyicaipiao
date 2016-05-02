@@ -51,15 +51,17 @@
     self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     //设置弱指针
-    __weak typeof(self) weakSelf = self;
+    //__weak typeof(self) weakSelf = self;
     //设置图片
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.logoUrl] placeholderImage:[UIImage imageNamed:@"Default"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         
         //判断是否出错
         if (error == nil) {
-            //下载成功刷新UI
-            weakSelf.imageView.image = image;
-            [weakSelf setNeedsLayout];//重新布局
+            self.imageView.image = image;
+            [self setNeedsLayout];
+//            //下载成功刷新UI
+//            weakSelf.imageView.image = image;
+//            [weakSelf setNeedsLayout];//重新布局
         }
     }];
 }

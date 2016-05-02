@@ -17,7 +17,8 @@
 }
 
 + (NSDictionary *)modelContainerPropertyGenericClass {
-    return @{@"adInfo" : [FQAdInfo class]};
+    return @{@"adInfo" : [FQAdInfo class],
+             @"cardList" : [FQCard class]};
 }
 
 @end

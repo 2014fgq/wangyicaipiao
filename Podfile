@@ -5,6 +5,7 @@ pod "YYWebImage"
 pod "MJRefresh"
 pod "AFNetworking", "~> 3.0.1"
 pod "YYModel"
+pod 'SDAutoLayout', '~> 1.52'
 #pod 'MBProgressHUD', '~> 0.9.1'
 #pod 'MOBFoundation'                    #Facebook改为原生的SDK
 #pod 'ShareSDK2'

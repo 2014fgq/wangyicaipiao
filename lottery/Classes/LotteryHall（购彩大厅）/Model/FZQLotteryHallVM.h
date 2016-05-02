@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FZQLotteryHallModel.h"
-@interface FZQLotteryHallViewModel : NSObject
+#import "FZQLotteryBaseVM.h"
+@interface FZQLotteryHallVM : FZQLotteryBaseVM
 @property (strong, nonatomic) FZQLotteryHallModel *model;
-- (void)getLatestDatas;
 @end

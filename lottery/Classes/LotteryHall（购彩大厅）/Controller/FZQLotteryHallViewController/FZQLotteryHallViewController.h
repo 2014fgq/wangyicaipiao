@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FZQLotteryHallViewModel.h"
-@interface FZQLotteryHallViewController : UIViewController
-@property (strong, nonatomic) FZQLotteryHallViewModel *vm;
-@property (strong, nonatomic) NSArray *cardList;
-
+#import "FZQLotteryHallVM.h"
+#import "FZQBaseLotteryCollectionVC.h"
+@interface FZQLotteryHallViewController : FZQBaseLotteryCollectionVC
+@property (strong, nonatomic) FZQLotteryHallVM *vm;
 
 @end

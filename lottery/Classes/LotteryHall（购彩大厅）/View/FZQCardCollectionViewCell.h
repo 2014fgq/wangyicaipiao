@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FZQLotteryHallModel.h"
+#import "UIView+SDAutoLayout.h"
 @interface FZQCardCollectionViewCell : UICollectionViewCell
 #define CardID @"card_cell"
 @property (weak, nonatomic) UIImageView *imgView;

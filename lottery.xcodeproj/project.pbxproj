@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8808D49F1CD2B8EF0035DA0B /* FZQArenaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D49E1CD2B8EF0035DA0B /* FZQArenaModel.m */; };
+		8808D4A21CD2BD270035DA0B /* FZQArenaVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4A11CD2BD270035DA0B /* FZQArenaVM.m */; };
+		8808D4A61CD2BF8F0035DA0B /* FZQBaseLotteryCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4A41CD2BF8F0035DA0B /* FZQBaseLotteryCollectionVC.m */; };
+		8808D4A71CD2BF8F0035DA0B /* FZQLotteryCollectionVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8808D4A51CD2BF8F0035DA0B /* FZQLotteryCollectionVCViewController.xib */; };
+		8808D4AB1CD2CE840035DA0B /* FZQLotteryBaseVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4AA1CD2CE830035DA0B /* FZQLotteryBaseVM.m */; };
+		8808D4B41CD3128E0035DA0B /* FZQArenaCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4B21CD3128E0035DA0B /* FZQArenaCollectionViewCell.m */; };
+		8808D4B51CD3128E0035DA0B /* FZQArenaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8808D4B31CD3128E0035DA0B /* FZQArenaCollectionViewCell.xib */; };
+		8808D4B71CD447E00035DA0B /* FZQSubLotteryHV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8808D4B61CD447E00035DA0B /* FZQSubLotteryHV.xib */; };
+		8808D4BA1CD5B8120035DA0B /* FZQArenaHV.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4B91CD5B8120035DA0B /* FZQArenaHV.m */; };
+		8808D4BD1CD5BABB0035DA0B /* SDDiscoverTableViewHeaderItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4BC1CD5BABB0035DA0B /* SDDiscoverTableViewHeaderItemButton.m */; };
+		8808D4C01CD5BFB00035DA0B /* SDDiscoverTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4BF1CD5BFB00035DA0B /* SDDiscoverTableViewHeader.m */; };
+		8808D4C31CD5C2310035DA0B /* FZQLotteryBaseHV.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4C21CD5C2310035DA0B /* FZQLotteryBaseHV.m */; };
 		8813E9A91CB6C8AB003E85A4 /* FZQBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8813E9A81CB6C8AB003E85A4 /* FZQBaseCell.m */; };
 		882812971CCF310D00A1FCFC /* FZQHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 882812961CCF310D00A1FCFC /* FZQHistoryTableViewCell.m */; };
 		882B293A1CB571720046A903 /* FZQOwl.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B292F1CB571720046A903 /* FZQOwl.m */; };
@@ -29,7 +41,7 @@
 		88469C711CCDC3AD008997F2 /* FQDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 88469C6D1CCDC3AD008997F2 /* FQDebug.m */; };
 		88469C721CCDC3AD008997F2 /* FQHttpOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 88469C6F1CCDC3AD008997F2 /* FQHttpOperation.m */; };
 		88469C771CCDC3FB008997F2 /* FZQLotteryHallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88469C741CCDC3FB008997F2 /* FZQLotteryHallModel.m */; };
-		88469C781CCDC3FB008997F2 /* FZQLotteryHallViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88469C761CCDC3FB008997F2 /* FZQLotteryHallViewModel.m */; };
+		88469C781CCDC3FB008997F2 /* FZQLotteryHallVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 88469C761CCDC3FB008997F2 /* FZQLotteryHallVM.m */; };
 		88469C7C1CCDC419008997F2 /* FZQCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88469C7A1CCDC419008997F2 /* FZQCardCollectionViewCell.m */; };
 		88469C7D1CCDC419008997F2 /* FZQCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88469C7B1CCDC419008997F2 /* FZQCardCollectionViewCell.xib */; };
 		88469C821CCDC76B008997F2 /* FQDiscoveryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88469C7F1CCDC76B008997F2 /* FQDiscoveryModel.m */; };
@@ -186,6 +198,27 @@
 		42925D1606525CB77941FAAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		781FBB764DE784CC5E3FD397 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7E77353860E3BC42CA116FDC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8808D49D1CD2B8EF0035DA0B /* FZQArenaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQArenaModel.h; sourceTree = "<group>"; };
+		8808D49E1CD2B8EF0035DA0B /* FZQArenaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQArenaModel.m; sourceTree = "<group>"; };
+		8808D4A01CD2BD270035DA0B /* FZQArenaVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQArenaVM.h; sourceTree = "<group>"; };
+		8808D4A11CD2BD270035DA0B /* FZQArenaVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQArenaVM.m; sourceTree = "<group>"; };
+		8808D4A31CD2BF8F0035DA0B /* FZQBaseLotteryCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQBaseLotteryCollectionVC.h; sourceTree = "<group>"; };
+		8808D4A41CD2BF8F0035DA0B /* FZQBaseLotteryCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQBaseLotteryCollectionVC.m; sourceTree = "<group>"; };
+		8808D4A51CD2BF8F0035DA0B /* FZQLotteryCollectionVCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZQLotteryCollectionVCViewController.xib; sourceTree = "<group>"; };
+		8808D4A91CD2CE830035DA0B /* FZQLotteryBaseVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQLotteryBaseVM.h; sourceTree = "<group>"; };
+		8808D4AA1CD2CE830035DA0B /* FZQLotteryBaseVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQLotteryBaseVM.m; sourceTree = "<group>"; };
+		8808D4B11CD3128E0035DA0B /* FZQArenaCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQArenaCollectionViewCell.h; sourceTree = "<group>"; };
+		8808D4B21CD3128E0035DA0B /* FZQArenaCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQArenaCollectionViewCell.m; sourceTree = "<group>"; };
+		8808D4B31CD3128E0035DA0B /* FZQArenaCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZQArenaCollectionViewCell.xib; sourceTree = "<group>"; };
+		8808D4B61CD447E00035DA0B /* FZQSubLotteryHV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZQSubLotteryHV.xib; sourceTree = "<group>"; };
+		8808D4B81CD5B8120035DA0B /* FZQArenaHV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQArenaHV.h; sourceTree = "<group>"; };
+		8808D4B91CD5B8120035DA0B /* FZQArenaHV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQArenaHV.m; sourceTree = "<group>"; };
+		8808D4BB1CD5BABB0035DA0B /* SDDiscoverTableViewHeaderItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDiscoverTableViewHeaderItemButton.h; sourceTree = "<group>"; };
+		8808D4BC1CD5BABB0035DA0B /* SDDiscoverTableViewHeaderItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDiscoverTableViewHeaderItemButton.m; sourceTree = "<group>"; };
+		8808D4BE1CD5BFB00035DA0B /* SDDiscoverTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDiscoverTableViewHeader.h; sourceTree = "<group>"; };
+		8808D4BF1CD5BFB00035DA0B /* SDDiscoverTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDiscoverTableViewHeader.m; sourceTree = "<group>"; };
+		8808D4C11CD5C2310035DA0B /* FZQLotteryBaseHV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQLotteryBaseHV.h; sourceTree = "<group>"; };
+		8808D4C21CD5C2310035DA0B /* FZQLotteryBaseHV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQLotteryBaseHV.m; sourceTree = "<group>"; };
 		8813E9A71CB6C8AB003E85A4 /* FZQBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQBaseCell.h; path = FZQSettingCell/FZQBaseCell.h; sourceTree = "<group>"; };
 		8813E9A81CB6C8AB003E85A4 /* FZQBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQBaseCell.m; path = FZQSettingCell/FZQBaseCell.m; sourceTree = "<group>"; };
 		882812951CCF310D00A1FCFC /* FZQHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQHistoryTableViewCell.h; sourceTree = "<group>"; };
@@ -229,8 +262,8 @@
 		88469C6F1CCDC3AD008997F2 /* FQHttpOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQHttpOperation.m; sourceTree = "<group>"; };
 		88469C731CCDC3FB008997F2 /* FZQLotteryHallModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQLotteryHallModel.h; sourceTree = "<group>"; };
 		88469C741CCDC3FB008997F2 /* FZQLotteryHallModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQLotteryHallModel.m; sourceTree = "<group>"; };
-		88469C751CCDC3FB008997F2 /* FZQLotteryHallViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQLotteryHallViewModel.h; sourceTree = "<group>"; };
-		88469C761CCDC3FB008997F2 /* FZQLotteryHallViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQLotteryHallViewModel.m; sourceTree = "<group>"; };
+		88469C751CCDC3FB008997F2 /* FZQLotteryHallVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQLotteryHallVM.h; sourceTree = "<group>"; };
+		88469C761CCDC3FB008997F2 /* FZQLotteryHallVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQLotteryHallVM.m; sourceTree = "<group>"; };
 		88469C791CCDC419008997F2 /* FZQCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQCardCollectionViewCell.h; sourceTree = "<group>"; };
 		88469C7A1CCDC419008997F2 /* FZQCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQCardCollectionViewCell.m; sourceTree = "<group>"; };
 		88469C7B1CCDC419008997F2 /* FZQCardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZQCardCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -524,6 +557,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8808D4A81CD2CCE00035DA0B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				8808D4A91CD2CE830035DA0B /* FZQLotteryBaseVM.h */,
+				8808D4AA1CD2CE830035DA0B /* FZQLotteryBaseVM.m */,
+			);
+			name = VM;
+			sourceTree = "<group>";
+		};
 		882B29231CB571720046A903 /* login(登录） */ = {
 			isa = PBXGroup;
 			children = (
@@ -719,8 +761,8 @@
 			children = (
 				88469C731CCDC3FB008997F2 /* FZQLotteryHallModel.h */,
 				88469C741CCDC3FB008997F2 /* FZQLotteryHallModel.m */,
-				88469C751CCDC3FB008997F2 /* FZQLotteryHallViewModel.h */,
-				88469C761CCDC3FB008997F2 /* FZQLotteryHallViewModel.m */,
+				88469C751CCDC3FB008997F2 /* FZQLotteryHallVM.h */,
+				88469C761CCDC3FB008997F2 /* FZQLotteryHallVM.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -738,6 +780,7 @@
 				884907BA1CAB06570057F39C /* FZQMenuView.xib */,
 				88B31F881CD028AC0084298A /* FZQLotteryHV.h */,
 				88B31F891CD028AC0084298A /* FZQLotteryHV.m */,
+				8808D4B61CD447E00035DA0B /* FZQSubLotteryHV.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -845,6 +888,10 @@
 		889A80D01CAA02ED0029A97D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8808D49D1CD2B8EF0035DA0B /* FZQArenaModel.h */,
+				8808D49E1CD2B8EF0035DA0B /* FZQArenaModel.m */,
+				8808D4A01CD2BD270035DA0B /* FZQArenaVM.h */,
+				8808D4A11CD2BD270035DA0B /* FZQArenaVM.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -852,6 +899,15 @@
 		889A80D11CAA02ED0029A97D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8808D4B11CD3128E0035DA0B /* FZQArenaCollectionViewCell.h */,
+				8808D4B21CD3128E0035DA0B /* FZQArenaCollectionViewCell.m */,
+				8808D4B31CD3128E0035DA0B /* FZQArenaCollectionViewCell.xib */,
+				8808D4B81CD5B8120035DA0B /* FZQArenaHV.h */,
+				8808D4B91CD5B8120035DA0B /* FZQArenaHV.m */,
+				8808D4BE1CD5BFB00035DA0B /* SDDiscoverTableViewHeader.h */,
+				8808D4BF1CD5BFB00035DA0B /* SDDiscoverTableViewHeader.m */,
+				8808D4BB1CD5BABB0035DA0B /* SDDiscoverTableViewHeaderItemButton.h */,
+				8808D4BC1CD5BABB0035DA0B /* SDDiscoverTableViewHeaderItemButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1337,7 +1393,10 @@
 		88B31F931CD12BD80084298A /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8808D4A81CD2CCE00035DA0B /* VM */,
 				88B31F941CD12BE20084298A /* VC */,
+				8808D4C11CD5C2310035DA0B /* FZQLotteryBaseHV.h */,
+				8808D4C21CD5C2310035DA0B /* FZQLotteryBaseHV.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -1345,6 +1404,9 @@
 		88B31F941CD12BE20084298A /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				8808D4A31CD2BF8F0035DA0B /* FZQBaseLotteryCollectionVC.h */,
+				8808D4A41CD2BF8F0035DA0B /* FZQBaseLotteryCollectionVC.m */,
+				8808D4A51CD2BF8F0035DA0B /* FZQLotteryCollectionVCViewController.xib */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -1532,15 +1594,18 @@
 				882B293B1CB571720046A903 /* FZQOwl.xib in Resources */,
 				887CECA01CAF41F300C010FC /* FZQNewFeature.plist in Resources */,
 				88469C7D1CCDC419008997F2 /* FZQCardCollectionViewCell.xib in Resources */,
+				8808D4B71CD447E00035DA0B /* FZQSubLotteryHV.xib in Resources */,
 				88AC4A6F1CAB56B20016D9E2 /* FZQDiscoveryViewController.storyboard in Resources */,
 				884907BB1CAB06570057F39C /* FZQMenuView.xib in Resources */,
 				88B31F581CCFFE930084298A /* LICENSE in Resources */,
 				88E1454C1CB4B73B00A8A898 /* MBProgressHUD.bundle in Resources */,
+				8808D4B51CD3128E0035DA0B /* FZQArenaCollectionViewCell.xib in Resources */,
 				889A80A71CA8F38A0029A97D /* LaunchScreen.storyboard in Resources */,
 				88E1458F1CB4B77100A8A898 /* Info.plist in Resources */,
 				88B31F6F1CCFFE930084298A /* LICENSE in Resources */,
 				882B293D1CB571720046A903 /* FZQSwitchView.xib in Resources */,
 				889A80A41CA8F38A0029A97D /* Assets.xcassets in Resources */,
+				8808D4A71CD2BF8F0035DA0B /* FZQLotteryCollectionVCViewController.xib in Resources */,
 				88B31F661CCFFE930084298A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1617,6 +1682,7 @@
 				882B298C1CB57A4C0046A903 /* FZQTextView.m in Sources */,
 				882B298B1CB57A060046A903 /* FZQLoginView.m in Sources */,
 				88B31F911CD08C260084298A /* GGBannerCollectionViewCell.m in Sources */,
+				8808D4A61CD2BF8F0035DA0B /* FZQBaseLotteryCollectionVC.m in Sources */,
 				88B31F831CCFFE930084298A /* FLEXRuntimeUtility.m in Sources */,
 				88B31F431CCFFE930084298A /* FLEXArgumentInputStructView.m in Sources */,
 				88B31F551CCFFE930084298A /* FLEXTableContentViewController.m in Sources */,
@@ -1633,10 +1699,12 @@
 				8887F1C31CCEF1BF00CAB6E5 /* FZQHistoryModel.m in Sources */,
 				8849078F1CAA335D0057F39C /* FZQMyLotteryViewController.m in Sources */,
 				88B31F7C1CCFFE930084298A /* FLEXExplorerToolbar.m in Sources */,
+				8808D49F1CD2B8EF0035DA0B /* FZQArenaModel.m in Sources */,
 				8849078C1CAA32FF0057F39C /* FZQHistoryViewController.m in Sources */,
 				88B31F681CCFFE930084298A /* FLEXNetworkHistoryTableViewController.m in Sources */,
 				884907891CAA32450057F39C /* FZQArenaViewController.m in Sources */,
 				88B31F6E1CCFFE930084298A /* FLEXNetworkObserver.m in Sources */,
+				8808D4BD1CD5BABB0035DA0B /* SDDiscoverTableViewHeaderItemButton.m in Sources */,
 				88B31F6A1CCFFE930084298A /* FLEXNetworkSettingsTableViewController.m in Sources */,
 				88B31F701CCFFE930084298A /* FLEXArrayExplorerViewController.m in Sources */,
 				882B293A1CB571720046A903 /* FZQOwl.m in Sources */,
@@ -1645,6 +1713,7 @@
 				88B31F711CCFFE930084298A /* FLEXClassExplorerViewController.m in Sources */,
 				88B31F871CCFFE930084298A /* FLEXImagePreviewViewController.m in Sources */,
 				88B31F7E1CCFFE930084298A /* FLEXHeapEnumerator.m in Sources */,
+				8808D4A21CD2BD270035DA0B /* FZQArenaVM.m in Sources */,
 				88B31F821CCFFE930084298A /* FLEXResources.m in Sources */,
 				88B31F6C1CCFFE930084298A /* FLEXNetworkTransactionDetailTableViewController.m in Sources */,
 				884907AB1CAAE6E10057F39C /* UIView+Frame.m in Sources */,
@@ -1652,8 +1721,10 @@
 				8813E9A91CB6C8AB003E85A4 /* FZQBaseCell.m in Sources */,
 				88469C861CCE7008008997F2 /* FZQDiscoveryCellTableViewCell.m in Sources */,
 				88B31F771CCFFE930084298A /* FLEXObjectExplorerFactory.m in Sources */,
+				8808D4C31CD5C2310035DA0B /* FZQLotteryBaseHV.m in Sources */,
 				88B31F541CCFFE930084298A /* FLEXTableContentCell.m in Sources */,
 				88B31F4F1CCFFE930084298A /* FLEXWindow.m in Sources */,
+				8808D4C01CD5BFB00035DA0B /* SDDiscoverTableViewHeader.m in Sources */,
 				88B31F411CCFFE930084298A /* FLEXArgumentInputNumberView.m in Sources */,
 				88B31F851CCFFE930084298A /* FLEXHierarchyTableViewCell.m in Sources */,
 				884907B31CAB00A20057F39C /* FZQLotteryHallViewController.m in Sources */,
@@ -1680,13 +1751,15 @@
 				88B31F5F1CCFFE930084298A /* FLEXInstancesTableViewController.m in Sources */,
 				88B31F8A1CD028AC0084298A /* FZQLotteryHV.m in Sources */,
 				882B293C1CB571720046A903 /* FZQSwitchView.m in Sources */,
-				88469C781CCDC3FB008997F2 /* FZQLotteryHallViewModel.m in Sources */,
+				88469C781CCDC3FB008997F2 /* FZQLotteryHallVM.m in Sources */,
+				8808D4BA1CD5B8120035DA0B /* FZQArenaHV.m in Sources */,
 				88B31F5E1CCFFE930084298A /* FLEXGlobalsTableViewController.m in Sources */,
 				88B31F651CCFFE930084298A /* FLEXSystemLogTableViewController.m in Sources */,
 				88B31F3B1CCFFE930084298A /* FLEXArgumentInputColorView.m in Sources */,
 				88B31F7A1CCFFE930084298A /* FLEXViewControllerExplorerViewController.m in Sources */,
 				88469C831CCDC76B008997F2 /* FQDiscoveryVM.m in Sources */,
 				88B31F4C1CCFFE930084298A /* FLEXMethodCallingViewController.m in Sources */,
+				8808D4B41CD3128E0035DA0B /* FZQArenaCollectionViewCell.m in Sources */,
 				88B31F691CCFFE930084298A /* FLEXNetworkRecorder.m in Sources */,
 				882812971CCF310D00A1FCFC /* FZQHistoryTableViewCell.m in Sources */,
 				88B31F5B1CCFFE930084298A /* FLEXFileBrowserFileOperationController.m in Sources */,
@@ -1727,6 +1800,7 @@
 				88469C7C1CCDC419008997F2 /* FZQCardCollectionViewCell.m in Sources */,
 				88B31F401CCFFE930084298A /* FLEXArgumentInputNotSupportedView.m in Sources */,
 				884907C21CAB4AF10057F39C /* UIImage+FZQExtension.m in Sources */,
+				8808D4AB1CD2CE840035DA0B /* FZQLotteryBaseVM.m in Sources */,
 				88B31F441CCFFE930084298A /* FLEXArgumentInputSwitchView.m in Sources */,
 				88B31F3D1CCFFE930084298A /* FLEXArgumentInputFontsPickerView.m in Sources */,
 				88B31F5D1CCFFE930084298A /* FLEXFileBrowserTableViewController.m in Sources */,

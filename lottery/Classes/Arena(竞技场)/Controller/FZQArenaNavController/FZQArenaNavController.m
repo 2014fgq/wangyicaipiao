@@ -20,11 +20,11 @@
     // 当前类初始化的时候才会调用,子类调用时不初始化
     if (self == [FZQArenaNavController class]) {
         
-    //获取当前类下面所有导航条
-    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedIn:self, nil];
+        //获取当前类下面所有导航条
+        UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedIn:self, nil];
     
-    //设置背景图片--经过拉伸保护的图片
-    [navBar setBackgroundImage:[UIImage stretchableImageNamed:@"NLArenaNavBar64"] forBarMetrics:UIBarMetricsDefault];
+        //设置背景图片--经过拉伸保护的图片
+        [navBar setBackgroundImage:[UIImage stretchableImageNamed:@"NLArenaNavBar64"] forBarMetrics:UIBarMetricsDefault];
     }
 }
 

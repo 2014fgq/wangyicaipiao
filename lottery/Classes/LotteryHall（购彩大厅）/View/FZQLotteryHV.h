@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface FZQLotteryHV : UICollectionReusableView
-@property (strong, nonatomic) UILabel *label;
+#import "FZQLotteryBaseHV.h"
+@interface FZQLotteryHV : FZQLotteryBaseHV
+@property (strong, nonatomic) UIView *view;
 @end
 

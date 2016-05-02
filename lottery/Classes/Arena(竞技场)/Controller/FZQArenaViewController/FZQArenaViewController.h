@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface FZQArenaViewController : UIViewController
-
+#import "FZQBaseLotteryCollectionVC.h"
+#import "FZQArenaVM.h"
+@interface FZQArenaViewController : FZQBaseLotteryCollectionVC
+@property (strong, nonatomic) FZQArenaVM *vm;
 @end

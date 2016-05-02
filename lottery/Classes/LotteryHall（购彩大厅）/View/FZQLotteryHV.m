@@ -9,35 +9,17 @@
 #import "FZQLotteryHV.h"
 
 @implementation FZQLotteryHV
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
-- (instancetype)initWithFrame:(CGRect)frame
+- (UIView *)view
 {
-    if(self = [super initWithFrame:frame])
+    if(!_view)
     {
+        _view.backgroundColor = [UIColor whiteColor];
         
+        UIView *view = [[[NSBundle mainBundle] loadNibNamed:@"FZQSubLotteryHV" owner:self options:nil] lastObject];
+        _view = view;
+        [self addSubview:_view];
     }
-    return self;
-}
-
-- (UILabel *)label
-{
-    if(!_label)
-    {
-        UILabel *label = [[UILabel alloc] initWithFrame:self.bounds];
-        _label = label;
-        _label.tag = 1;
-        _label.textAlignment = NSTextAlignmentCenter;
-        [self addSubview:label];
-    }
-    return _label;
+    return _view;
 }
 
 @end

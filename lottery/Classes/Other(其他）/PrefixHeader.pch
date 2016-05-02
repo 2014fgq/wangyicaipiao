@@ -348,7 +348,8 @@ if(!pointer)\
 NSLog(@"[%s]%s is null!", __func__, #pointer);\
 }
 
-#define CELLHEIGHT 100
+#define CELLHEIGHT 80
+#define LOTTERY_HEADERVIEWHEIGH 150
 #endif /* OC使用 */
 //----------------------OC----------------------------
 

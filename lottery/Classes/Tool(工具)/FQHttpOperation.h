@@ -10,11 +10,11 @@
 #import "AFSecurityPolicy+XDPolicy.h"
 @interface FQHttpOperation : NSObject
 
-typedef void (^successBlock)(id responseObject);
-typedef void (^failureBlock)(NSError *error);
+typedef void (^successBlock)(id _Nullable responseObject);
+typedef void (^failureBlock)(NSError * _Nonnull error);
 
-+ (void)getRequestWithURL:(NSString *)URLString parameters:(nullable id)parameters success:(successBlock)success failure:(failureBlock)failure;
++ (void)getRequestWithURL:(NSString *_Nonnull)URLString parameters:(nullable id)parameters success:(nullable successBlock)success failure:(nullable failureBlock)failure;
 
 
-+ (void)postRequestWithURL:(NSString *)URLString parameters:(nullable id)parameters success:(successBlock)success failure:(failureBlock)failure;
++ (void)postRequestWithURL:(NSString *_Nonnull)URLString parameters:(nullable id)parameters success:(nullable successBlock)success failure:(nullable failureBlock)failure;
 @end
