@@ -22,7 +22,7 @@
     FZQCardCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:IndexPath];
     
     cell.contentView.backgroundColor = [UIColor whiteColor];
-    
+    [cell setup];
     return cell;
 }
 
@@ -48,46 +48,46 @@
         //self.detailLabel.backgroundColor = [UIColor redColor];
         //self.detailLabel.textColor = [UIColor whiteColor];
     }
-    
-    
 }
 
 - (void)layoutSubviews {
-    NSInteger imgWidth = 40;
-    //self.imgView.alignmentRectInsets = UIEdgeInsetsMake(0, 0, 0, 0);
-    self.imgView.frame = CGRectMake(0, 0, imgWidth, imgWidth);
-    self.titleLabel.frame  = CGRectMake(imgWidth, 0, self.w-imgWidth, CELLHEIGHT/2);
-    self.detailLabel.frame = CGRectMake(imgWidth, CELLHEIGHT/2, self.w-imgWidth, 20);
+    [super layoutSubviews];
+//    NSInteger imgWidth = 40;
+//    //self.imgView.alignmentRectInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+//    self.imgView.frame = CGRectMake(0, 0, imgWidth, imgWidth);
+//    self.titleLabel.frame  = CGRectMake(imgWidth, 0, self.w-imgWidth, CELLHEIGHT/2);
+//    self.detailLabel.frame = CGRectMake(imgWidth, CELLHEIGHT/2, self.w-imgWidth, 20);
     
     [self setup];
 }
 -(void)setup{
     
     // 设置约束
-    CGFloat margin = 50;
+    CGFloat margin = 10;
     
     self.imgView.sd_layout
     .leftSpaceToView(self,margin)
-    .topSpaceToView(self,margin);
-    //.heightIs(21);
-    //.autoHeightRatio(0);
+    .topSpaceToView(self,margin)
+    .rightSpaceToView(self, self.w*3/4)
+    .heightIs(self.h*3/4);
+//    .maxHeightIs(self.h);
+//    .autoHeightRatio(0);
     
     self.titleLabel.sd_layout
     .leftSpaceToView(self.imgView,margin)
     .topEqualToView(self.imgView)
-//    .rightSpaceToView(self.contentView,margin)
-    .leftSpaceToView(self,margin)
+    .rightSpaceToView(self,margin)
     //.heightIs(21);
     .autoHeightRatio(0);
-    
+//
     self.detailLabel.sd_layout
     .leftEqualToView(self.titleLabel)
-    .topSpaceToView(self.titleLabel,margin)
-//    .rightSpaceToView(self.contentView,margin)
+    .topSpaceToView(self.titleLabel, margin)
+    .rightEqualToView(self.titleLabel)
     .autoHeightRatio(0);
     
-    [self setupAutoHeightWithBottomView:self.detailLabel bottomMargin:0];
-    
+    //[self setupAutoHeightWithBottomViewsArray:@[_imgView, _detailLabel] bottomMargin:margin];
+    [self setupAutoHeightWithBottomView:self.imgView bottomMargin:margin];
 }
 
 #pragma mark - 懒加载

@@ -142,12 +142,13 @@
     CGSize size = CGSizeMake((self.view.w-0.5)/2.0, CELLHEIGHT);
     return size;
 }
-
+//设置每个collectionview item的边距都为0
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
     return UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
+//设置每行之间的距离
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
     return 0.5f;
