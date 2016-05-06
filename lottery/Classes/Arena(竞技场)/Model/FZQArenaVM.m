@@ -39,4 +39,17 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"getLatestHeaderDatasFail" object:nil];
     }];
 }
+
+- (void)getLatestDatasByID:(NSString *)categoryId
+{
+    NSString *url = [NSString stringWithFormat:@"http://api.g.caipiao.163.com/homepage/list_goods.html?goodsType=%@&pageNo=1", categoryId];
+    [FQHttpOperation getRequestWithURL:url parameters:nil success:^(id responseObject) {
+        FZQProductModel *model = [FZQProductModel yy_modelWithJSON:responseObject];
+        self.model = model;
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"getLatestDatas" object:nil];
+    } failure:^(NSError * error) {
+        NSLog(@"%@", error);
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"getLatestDatasFail" object:nil];
+    }];
+}
 @end

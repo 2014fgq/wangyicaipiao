@@ -12,7 +12,7 @@
 #import "YYModel.h"
 #import "YYWebImage.h"
 #import "FZQDiscoveryCellTableViewCell.h"
-#import "FZQDiscoveryWebViewController.h"
+#import "FZQLotteryWebVC.h"
 
 @interface FZQDiscoveryViewController ()
 @property (nonatomic) NSInteger seciotn;
@@ -76,7 +76,7 @@
     FQItmeDiscoveryModel *model = [FQItmeDiscoveryModel yy_modelWithJSON:[array objectAtIndex:indexPath.row]];
     /** 跳转界面 */
     if (![model.jumpUrl containsString:@"ntescaipiao"]) {
-        FZQDiscoveryWebViewController *webVC = [[FZQDiscoveryWebViewController alloc] init];
+        FZQLotteryWebVC *webVC = [[FZQLotteryWebVC alloc] init];
         webVC.url = model.jumpUrl;
         webVC.title = @"网易彩票";
         [self.navigationController pushViewController:webVC animated:YES];

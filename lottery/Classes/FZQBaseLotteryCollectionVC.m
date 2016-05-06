@@ -17,7 +17,6 @@
 #define LOTTERYFOOTER @"lottery_footer"
 
 @interface FZQBaseLotteryCollectionVC ()
-@property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) FZQLotteryBaseHV *headerview;
 @end
 
@@ -92,7 +91,7 @@
     
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
-    self.collectionView.backgroundColor = [UIColor blackColor];
+    self.collectionView.backgroundColor = BACKGROUPCOLOR;
     [self.view addSubview:self.collectionView];
     //设置页面底色
     self.view.backgroundColor = BACKGROUPCOLOR;

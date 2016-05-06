@@ -19,6 +19,10 @@
 		8808D4BD1CD5BABB0035DA0B /* SDDiscoverTableViewHeaderItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4BC1CD5BABB0035DA0B /* SDDiscoverTableViewHeaderItemButton.m */; };
 		8808D4C01CD5BFB00035DA0B /* SDDiscoverTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4BF1CD5BFB00035DA0B /* SDDiscoverTableViewHeader.m */; };
 		8808D4C31CD5C2310035DA0B /* FZQLotteryBaseHV.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4C21CD5C2310035DA0B /* FZQLotteryBaseHV.m */; };
+		8808D4C91CDAEE470035DA0B /* FZQArenaCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4C81CDAEE470035DA0B /* FZQArenaCategoryModel.m */; };
+		8808D4CC1CDAF0900035DA0B /* FZQArenaCategoryVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4CB1CDAF0900035DA0B /* FZQArenaCategoryVM.m */; };
+		8808D4D31CDAF96B0035DA0B /* FZQArenaCategoryCollectionVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808D4D11CDAF96B0035DA0B /* FZQArenaCategoryCollectionVCell.m */; };
+		8808D4D41CDAF96B0035DA0B /* FZQArenaCategoryCollectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8808D4D21CDAF96B0035DA0B /* FZQArenaCategoryCollectionVC.xib */; };
 		8813E9A91CB6C8AB003E85A4 /* FZQBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8813E9A81CB6C8AB003E85A4 /* FZQBaseCell.m */; };
 		882812971CCF310D00A1FCFC /* FZQHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 882812961CCF310D00A1FCFC /* FZQHistoryTableViewCell.m */; };
 		882B293A1CB571720046A903 /* FZQOwl.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B292F1CB571720046A903 /* FZQOwl.m */; };
@@ -31,6 +35,8 @@
 		882B298F1CB5B3920046A903 /* FZQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B298E1CB5B3920046A903 /* FZQBaseViewController.m */; };
 		882B29921CB5C0C80046A903 /* FZQRedeemCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B29911CB5C0C80046A903 /* FZQRedeemCodeViewController.m */; };
 		882B29951CB5C7EE0046A903 /* FZQMorePushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B29941CB5C7EE0046A903 /* FZQMorePushViewController.m */; };
+		883A02D51CDB9FDC00EA5873 /* FZQArenaCategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A02D41CDB9FDC00EA5873 /* FZQArenaCategoryVC.m */; };
+		883A02D81CDBC9AB00EA5873 /* FZQArenaCategoryDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A02D71CDBC9AB00EA5873 /* FZQArenaCategoryDetailVC.m */; };
 		884544B41CB42C98000BBC51 /* FZQMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884544B31CB42C98000BBC51 /* FZQMyLotteryViewController.xib */; };
 		884544BF1CB47E1A000BBC51 /* FZQSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884544BC1CB47E1A000BBC51 /* FZQSettingViewController.m */; };
 		884544C21CB48E06000BBC51 /* FZQGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 884544C11CB48E06000BBC51 /* FZQGroupItem.m */; };
@@ -65,7 +71,7 @@
 		887CECA01CAF41F300C010FC /* FZQNewFeature.plist in Resources */ = {isa = PBXBuildFile; fileRef = 887CEC9F1CAF41F300C010FC /* FZQNewFeature.plist */; };
 		887CECA31CAF431C00C010FC /* FZQNewFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 887CECA21CAF431C00C010FC /* FZQNewFeature.m */; };
 		887CECAD1CB36CF700C010FC /* FZQSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 887CECAC1CB36CF700C010FC /* FZQSaveTool.m */; };
-		8887F1C01CCEB26600CAB6E5 /* FZQDiscoveryWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8887F1BF1CCEB26600CAB6E5 /* FZQDiscoveryWebViewController.m */; };
+		8887F1C01CCEB26600CAB6E5 /* FZQLotteryWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8887F1BF1CCEB26600CAB6E5 /* FZQLotteryWebVC.m */; };
 		8887F1C31CCEF1BF00CAB6E5 /* FZQHistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8887F1C21CCEF1BF00CAB6E5 /* FZQHistoryModel.m */; };
 		8887F1C61CCEF1D900CAB6E5 /* FZQHistoryVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8887F1C51CCEF1D900CAB6E5 /* FZQHistoryVM.m */; };
 		889A80A41CA8F38A0029A97D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889A80A31CA8F38A0029A97D /* Assets.xcassets */; };
@@ -219,6 +225,13 @@
 		8808D4BF1CD5BFB00035DA0B /* SDDiscoverTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDiscoverTableViewHeader.m; sourceTree = "<group>"; };
 		8808D4C11CD5C2310035DA0B /* FZQLotteryBaseHV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQLotteryBaseHV.h; sourceTree = "<group>"; };
 		8808D4C21CD5C2310035DA0B /* FZQLotteryBaseHV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQLotteryBaseHV.m; sourceTree = "<group>"; };
+		8808D4C71CDAEE470035DA0B /* FZQArenaCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQArenaCategoryModel.h; sourceTree = "<group>"; };
+		8808D4C81CDAEE470035DA0B /* FZQArenaCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQArenaCategoryModel.m; sourceTree = "<group>"; };
+		8808D4CA1CDAF0900035DA0B /* FZQArenaCategoryVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQArenaCategoryVM.h; sourceTree = "<group>"; };
+		8808D4CB1CDAF0900035DA0B /* FZQArenaCategoryVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQArenaCategoryVM.m; sourceTree = "<group>"; };
+		8808D4D01CDAF96B0035DA0B /* FZQArenaCategoryCollectionVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQArenaCategoryCollectionVCell.h; sourceTree = "<group>"; };
+		8808D4D11CDAF96B0035DA0B /* FZQArenaCategoryCollectionVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQArenaCategoryCollectionVCell.m; sourceTree = "<group>"; };
+		8808D4D21CDAF96B0035DA0B /* FZQArenaCategoryCollectionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZQArenaCategoryCollectionVC.xib; sourceTree = "<group>"; };
 		8813E9A71CB6C8AB003E85A4 /* FZQBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQBaseCell.h; path = FZQSettingCell/FZQBaseCell.h; sourceTree = "<group>"; };
 		8813E9A81CB6C8AB003E85A4 /* FZQBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQBaseCell.m; path = FZQSettingCell/FZQBaseCell.m; sourceTree = "<group>"; };
 		882812951CCF310D00A1FCFC /* FZQHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQHistoryTableViewCell.h; sourceTree = "<group>"; };
@@ -243,6 +256,10 @@
 		882B29931CB5C7EE0046A903 /* FZQMorePushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQMorePushViewController.h; path = FZQMorePushViewController/FZQMorePushViewController.h; sourceTree = "<group>"; };
 		882B29941CB5C7EE0046A903 /* FZQMorePushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQMorePushViewController.m; path = FZQMorePushViewController/FZQMorePushViewController.m; sourceTree = "<group>"; };
 		883784631CAA26A200D5FB6F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		883A02D31CDB9FDC00EA5873 /* FZQArenaCategoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQArenaCategoryVC.h; sourceTree = "<group>"; };
+		883A02D41CDB9FDC00EA5873 /* FZQArenaCategoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQArenaCategoryVC.m; sourceTree = "<group>"; };
+		883A02D61CDBC9AB00EA5873 /* FZQArenaCategoryDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQArenaCategoryDetailVC.h; sourceTree = "<group>"; };
+		883A02D71CDBC9AB00EA5873 /* FZQArenaCategoryDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQArenaCategoryDetailVC.m; sourceTree = "<group>"; };
 		884544B31CB42C98000BBC51 /* FZQMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FZQMyLotteryViewController.xib; path = FZQMyLotteryViewController/FZQMyLotteryViewController.xib; sourceTree = "<group>"; };
 		884544BB1CB47E1A000BBC51 /* FZQSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQSettingViewController.h; path = FZQSettingViewController/FZQSettingViewController.h; sourceTree = "<group>"; };
 		884544BC1CB47E1A000BBC51 /* FZQSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQSettingViewController.m; path = FZQSettingViewController/FZQSettingViewController.m; sourceTree = "<group>"; };
@@ -307,8 +324,8 @@
 		887CECA21CAF431C00C010FC /* FZQNewFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQNewFeature.m; sourceTree = "<group>"; };
 		887CECAB1CB36CF700C010FC /* FZQSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQSaveTool.h; path = FZQSaveTool/FZQSaveTool.h; sourceTree = "<group>"; };
 		887CECAC1CB36CF700C010FC /* FZQSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQSaveTool.m; path = FZQSaveTool/FZQSaveTool.m; sourceTree = "<group>"; };
-		8887F1BE1CCEB26600CAB6E5 /* FZQDiscoveryWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQDiscoveryWebViewController.h; sourceTree = "<group>"; };
-		8887F1BF1CCEB26600CAB6E5 /* FZQDiscoveryWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQDiscoveryWebViewController.m; sourceTree = "<group>"; };
+		8887F1BE1CCEB26600CAB6E5 /* FZQLotteryWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQLotteryWebVC.h; path = "Discovery(发现)/Controller/FZQLotteryWebVC.h"; sourceTree = "<group>"; };
+		8887F1BF1CCEB26600CAB6E5 /* FZQLotteryWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQLotteryWebVC.m; path = "Discovery(发现)/Controller/FZQLotteryWebVC.m"; sourceTree = "<group>"; };
 		8887F1C11CCEF1BF00CAB6E5 /* FZQHistoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQHistoryModel.h; sourceTree = "<group>"; };
 		8887F1C21CCEF1BF00CAB6E5 /* FZQHistoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQHistoryModel.m; sourceTree = "<group>"; };
 		8887F1C41CCEF1D900CAB6E5 /* FZQHistoryVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQHistoryVM.h; sourceTree = "<group>"; };
@@ -709,8 +726,6 @@
 				88AC4A6E1CAB56B20016D9E2 /* FZQDiscoveryViewController.storyboard */,
 				88AC4A701CAB6D6F0016D9E2 /* FZQAllLotteryViewController.h */,
 				88AC4A711CAB6D6F0016D9E2 /* FZQAllLotteryViewController.m */,
-				8887F1BE1CCEB26600CAB6E5 /* FZQDiscoveryWebViewController.h */,
-				8887F1BF1CCEB26600CAB6E5 /* FZQDiscoveryWebViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -881,6 +896,10 @@
 				884907881CAA32450057F39C /* FZQArenaViewController.m */,
 				884907BC1CAB400E0057F39C /* FZQArenaNavController.h */,
 				884907BD1CAB400E0057F39C /* FZQArenaNavController.m */,
+				883A02D31CDB9FDC00EA5873 /* FZQArenaCategoryVC.h */,
+				883A02D41CDB9FDC00EA5873 /* FZQArenaCategoryVC.m */,
+				883A02D61CDBC9AB00EA5873 /* FZQArenaCategoryDetailVC.h */,
+				883A02D71CDBC9AB00EA5873 /* FZQArenaCategoryDetailVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -892,6 +911,10 @@
 				8808D49E1CD2B8EF0035DA0B /* FZQArenaModel.m */,
 				8808D4A01CD2BD270035DA0B /* FZQArenaVM.h */,
 				8808D4A11CD2BD270035DA0B /* FZQArenaVM.m */,
+				8808D4C71CDAEE470035DA0B /* FZQArenaCategoryModel.h */,
+				8808D4C81CDAEE470035DA0B /* FZQArenaCategoryModel.m */,
+				8808D4CA1CDAF0900035DA0B /* FZQArenaCategoryVM.h */,
+				8808D4CB1CDAF0900035DA0B /* FZQArenaCategoryVM.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -899,6 +922,9 @@
 		889A80D11CAA02ED0029A97D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8808D4D01CDAF96B0035DA0B /* FZQArenaCategoryCollectionVCell.h */,
+				8808D4D11CDAF96B0035DA0B /* FZQArenaCategoryCollectionVCell.m */,
+				8808D4D21CDAF96B0035DA0B /* FZQArenaCategoryCollectionVC.xib */,
 				8808D4B11CD3128E0035DA0B /* FZQArenaCollectionViewCell.h */,
 				8808D4B21CD3128E0035DA0B /* FZQArenaCollectionViewCell.m */,
 				8808D4B31CD3128E0035DA0B /* FZQArenaCollectionViewCell.xib */,
@@ -1407,6 +1433,8 @@
 				8808D4A31CD2BF8F0035DA0B /* FZQBaseLotteryCollectionVC.h */,
 				8808D4A41CD2BF8F0035DA0B /* FZQBaseLotteryCollectionVC.m */,
 				8808D4A51CD2BF8F0035DA0B /* FZQLotteryCollectionVCViewController.xib */,
+				8887F1BE1CCEB26600CAB6E5 /* FZQLotteryWebVC.h */,
+				8887F1BF1CCEB26600CAB6E5 /* FZQLotteryWebVC.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -1600,6 +1628,7 @@
 				88B31F581CCFFE930084298A /* LICENSE in Resources */,
 				88E1454C1CB4B73B00A8A898 /* MBProgressHUD.bundle in Resources */,
 				8808D4B51CD3128E0035DA0B /* FZQArenaCollectionViewCell.xib in Resources */,
+				8808D4D41CDAF96B0035DA0B /* FZQArenaCategoryCollectionVC.xib in Resources */,
 				889A80A71CA8F38A0029A97D /* LaunchScreen.storyboard in Resources */,
 				88E1458F1CB4B77100A8A898 /* Info.plist in Resources */,
 				88B31F6F1CCFFE930084298A /* LICENSE in Resources */,
@@ -1687,7 +1716,7 @@
 				88B31F431CCFFE930084298A /* FLEXArgumentInputStructView.m in Sources */,
 				88B31F551CCFFE930084298A /* FLEXTableContentViewController.m in Sources */,
 				88B31F4D1CCFFE930084298A /* FLEXPropertyEditorViewController.m in Sources */,
-				8887F1C01CCEB26600CAB6E5 /* FZQDiscoveryWebViewController.m in Sources */,
+				8887F1C01CCEB26600CAB6E5 /* FZQLotteryWebVC.m in Sources */,
 				88B31F861CCFFE930084298A /* FLEXHierarchyTableViewController.m in Sources */,
 				88469C771CCDC3FB008997F2 /* FZQLotteryHallModel.m in Sources */,
 				88B31F531CCFFE930084298A /* FLEXTableColumnHeader.m in Sources */,
@@ -1723,12 +1752,15 @@
 				88B31F771CCFFE930084298A /* FLEXObjectExplorerFactory.m in Sources */,
 				8808D4C31CD5C2310035DA0B /* FZQLotteryBaseHV.m in Sources */,
 				88B31F541CCFFE930084298A /* FLEXTableContentCell.m in Sources */,
+				8808D4CC1CDAF0900035DA0B /* FZQArenaCategoryVM.m in Sources */,
 				88B31F4F1CCFFE930084298A /* FLEXWindow.m in Sources */,
 				8808D4C01CD5BFB00035DA0B /* SDDiscoverTableViewHeader.m in Sources */,
 				88B31F411CCFFE930084298A /* FLEXArgumentInputNumberView.m in Sources */,
 				88B31F851CCFFE930084298A /* FLEXHierarchyTableViewCell.m in Sources */,
 				884907B31CAB00A20057F39C /* FZQLotteryHallViewController.m in Sources */,
 				88B31F7D1CCFFE930084298A /* FLEXToolbarItem.m in Sources */,
+				8808D4D31CDAF96B0035DA0B /* FZQArenaCategoryCollectionVCell.m in Sources */,
+				883A02D51CDB9FDC00EA5873 /* FZQArenaCategoryVC.m in Sources */,
 				88B31F621CCFFE930084298A /* FLEXWebViewController.m in Sources */,
 				88B31F3F1CCFFE930084298A /* FLEXArgumentInputJSONObjectView.m in Sources */,
 				88B31F3C1CCFFE930084298A /* FLEXArgumentInputDateView.m in Sources */,
@@ -1743,8 +1775,10 @@
 				884544CB1CB4ACCB000BBC51 /* FZQArrowItem.m in Sources */,
 				88B31F841CCFFE930084298A /* FLEXUtility.m in Sources */,
 				88B31F921CD08C260084298A /* GGBannerView.m in Sources */,
+				883A02D81CDBC9AB00EA5873 /* FZQArenaCategoryDetailVC.m in Sources */,
 				88B31F731CCFFE930084298A /* FLEXDictionaryExplorerViewController.m in Sources */,
 				889A80F01CAA02ED0029A97D /* AppDelegate.m in Sources */,
+				8808D4C91CDAEE470035DA0B /* FZQArenaCategoryModel.m in Sources */,
 				88B31F4E1CCFFE930084298A /* FLEXExplorerViewController.m in Sources */,
 				88B31F631CCFFE930084298A /* FLEXSystemLogMessage.m in Sources */,
 				88B31F601CCFFE930084298A /* FLEXLibrariesTableViewController.m in Sources */,

@@ -9,9 +9,10 @@
 #import "FZQArenaViewController.h"
 #import "FZQArenaCollectionViewCell.h"
 #import "FZQArenaHV.h"
-#import "FZQDiscoveryWebViewController.h"
+#import "FZQLotteryWebVC.h"
+#import "FZQArenaCategoryVC.h"
+
 @interface FZQArenaViewController()
-@property (weak, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) FZQArenaHV *headerview;
 @end
 
@@ -21,6 +22,12 @@
 @implementation FZQArenaViewController
 @dynamic vm;
 #pragma mark - life cycle
+- (void)activity
+{
+    FZQArenaCategoryVC *vc = [[FZQArenaCategoryVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (void)SetData_beforeNoti
 {
     self.vm = [FZQArenaVM new];
@@ -33,6 +40,7 @@
     [self.collectionView registerClass:[FZQArenaCollectionViewCell class] forCellWithReuseIdentifier:ARENACELL];
     [self.collectionView registerClass:[FZQArenaHV class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:LOTTERYHEADER];
     [self.collectionView registerClass:[FZQArenaHV class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:LOTTERYFOOTER];
+
 }
 
 - (void)userrefreshWholeView
@@ -51,6 +59,12 @@
 //返回头headerView的大小
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
     CGSize size = {SCREEN_WIDTH, 1.7*LOTTERY_HEADERVIEWHEIGH};
+    return size;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGSize size = CGSizeMake((self.view.w-2)/2, 160);
     return size;
 }
 

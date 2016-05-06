@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FZQDiscoveryWebViewController : UIViewController
+@interface FZQLotteryWebVC : UIViewController
 @property (strong, nonatomic) NSString *url;
 @end

@@ -14,13 +14,13 @@
 #import "MJRefresh.h"
 #import "FZQLotteryHV.h"
 #import "YYWebImage.h"
-#import "FZQDiscoveryWebViewController.h"
-
+#import "FZQLotteryWebVC.h"
+#import "FZQArenaCategoryVC.h"
+#import "FZQArenaViewController.h"
 #define LOTTERYHEADER @"lottery_header"
 #define LOTTERYFOOTER @"lottery_footer"
 
 @interface FZQLotteryHallViewController ()
-@property (weak, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) NSString *version;
 @property (strong, nonatomic) FZQLotteryHV *headerview;
 @property (strong, nonatomic) NSArray *cardlist;
@@ -29,6 +29,13 @@
 @implementation FZQLotteryHallViewController
 @dynamic vm;
 #pragma mark - life cycle
+- (void)activity
+{
+    FZQArenaCategoryVC *vc = [[FZQArenaCategoryVC alloc] init];
+//    FZQArenaViewController *vc = [[FZQArenaViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (void)SetData_beforeNoti
 {
     self.vm = [FZQLotteryHallVM new];
@@ -66,13 +73,13 @@
 
 #pragma mark - hud
 /* 活动 */
-- (void)activity
-{
-    /** 弹出蒙板 */
-    [FZQHudView show];
-    /** 弹出菜单 */
-    [FZQMenuView show];
-}
+//- (void)activity
+//{
+//    /** 弹出蒙板 */
+//    [FZQHudView show];
+//    /** 弹出菜单 */
+//    [FZQMenuView show];
+//}
 
 // The view that is returned must be retrieved from a call to -dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
@@ -128,7 +135,7 @@
     if (index < self.vm.model.adInfo.count) {
         FQAdInfo *model = self.vm.model.adInfo[index];
         if(model.clickHref) {
-            FZQDiscoveryWebViewController *webVC = [[FZQDiscoveryWebViewController alloc] init];
+            FZQLotteryWebVC *webVC = [[FZQLotteryWebVC alloc] init];
             webVC.url = model.clickHref;
             webVC.title = @"网易彩票";
             [self.navigationController pushViewController:webVC animated:YES];
