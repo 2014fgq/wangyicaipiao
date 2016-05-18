@@ -130,6 +130,17 @@
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    FQCard *model = [self.vm.model.cardList objectAtIndex:indexPath.row];
+    FZQLotteryWebVC *vc = [[FZQLotteryWebVC alloc] init];
+    
+    vc.url = model.attribute.jumpUrl;
+    vc.title = model.attribute.cardName;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - Banner delegate
 -(void)bannerView:(GGBannerView *)bannerView didSelectAtIndex:(NSUInteger)index {
     if (index < self.vm.model.adInfo.count) {
@@ -142,4 +153,5 @@
         }
     }
 }
+
 @end

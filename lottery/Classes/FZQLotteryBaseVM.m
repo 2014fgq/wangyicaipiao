@@ -11,4 +11,5 @@
 @implementation FZQLotteryBaseVM
 - (void)getLatestDatas {};
 - (void)getLatestHeaderDatas {};
+- (void)getLatestFooterDatas {};
 @end

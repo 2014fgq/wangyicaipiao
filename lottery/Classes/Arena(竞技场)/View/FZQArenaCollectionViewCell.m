@@ -9,17 +9,6 @@
 #import "FZQArenaCollectionViewCell.h"
 #import "YYWebImage.h"
 
-#define UILAZY(viewname, CLASS) \
-- (CLASS *)viewname\
-{\
-    if(!_##viewname)\
-    {\
-        CLASS *viewname = [[CLASS alloc] init];\
-        _##viewname = viewname;\
-        [self addSubview:_##viewname];\
-    }\
-    return _##viewname;\
-}
 @implementation FZQArenaCollectionViewCell
 
 - (void)awakeFromNib {
@@ -47,10 +36,10 @@
     self.label.textAlignment = NSTextAlignmentCenter;
     
     self.proView.progress = _model.remainTimes / _model.totalTimes;
-    self.allnum.text = [NSString stringWithFormat:@"%d", _model.totalTimes];
+    self.allnum.text = [NSString stringWithFormat:@"%ld", (long)_model.totalTimes];
     self.all.text = @"总数";
     
-    self.leftnum.text = [NSString stringWithFormat:@"%d", _model.remainTimes];
+    self.leftnum.text = [NSString stringWithFormat:@"%ld", (long)_model.remainTimes];
     
     self.left.text = @"剩余";
     
@@ -170,14 +159,16 @@
     
     self.leftnum.sd_layout
     .topEqualToView(self.allnum)
-    .rightEqualToView(self.proView)
+//    .rightEqualToView(self.proView)
     .widthIs(self.allnum.w)
+    .rightSpaceToView(self, self.w*0.2)
     .heightIs(self.allnum.h);
     
     self.left.sd_layout
     .topEqualToView(self.all)
-    .rightEqualToView(self.proView)
+//    .rightEqualToView(self.proView)
     .widthIs(self.all.w)
+    .rightSpaceToView(self, self.w*0.2)
     .heightIs(self.all.h);
     
     self.button.sd_layout

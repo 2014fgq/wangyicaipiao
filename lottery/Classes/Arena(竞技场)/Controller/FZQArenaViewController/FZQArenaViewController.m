@@ -11,7 +11,8 @@
 #import "FZQArenaHV.h"
 #import "FZQLotteryWebVC.h"
 #import "FZQArenaCategoryVC.h"
-
+#import "FZQLotteryWebVC.h"
+#import "FZQProductDetailVC.h"
 @interface FZQArenaViewController()
 @property (strong, nonatomic) FZQArenaHV *headerview;
 @end
@@ -25,6 +26,7 @@
 - (void)activity
 {
     FZQArenaCategoryVC *vc = [[FZQArenaCategoryVC alloc] init];
+    vc.title = @"分类";
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -40,7 +42,6 @@
     [self.collectionView registerClass:[FZQArenaCollectionViewCell class] forCellWithReuseIdentifier:ARENACELL];
     [self.collectionView registerClass:[FZQArenaHV class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:LOTTERYHEADER];
     [self.collectionView registerClass:[FZQArenaHV class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:LOTTERYFOOTER];
-
 }
 
 - (void)userrefreshWholeView
@@ -89,6 +90,20 @@
         self.headerview.header_model = self.vm.header_model;
         [self.headerview reloaddata];
         self.headerview.view.frame = CGRectMake(0, self.headerview.bannerView.h, SCREEN_WIDTH, 0.5*LOTTERY_HEADERVIEWHEIGH);
+        
+        if([self.headerview.view isKindOfClass:[SDDiscoverTableViewHeader class]])
+        {
+            SDDiscoverTableViewHeader *header = (SDDiscoverTableViewHeader *)self.headerview.view;
+        
+            __weak typeof(self) weakSelf = self;
+            header.buttonClickedOperationBlock = ^(NSInteger index){
+                FZQQuickNavigation *model = weakSelf.vm.header_model.quickNavigation[index];
+                FZQLotteryWebVC *vc = [[FZQLotteryWebVC alloc] init];
+                vc.title = model.navName;
+                vc.url = model.clickUrl;
+                [weakSelf.navigationController pushViewController:vc animated:YES];
+            };
+        }
     }
     else if ([kind isEqualToString:UICollectionElementKindSectionFooter]){
         view.backgroundColor = [UIColor lightGrayColor];
@@ -119,18 +134,27 @@
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    FZQItemProductList *model = [self.vm.model.productList objectAtIndex:indexPath.row];
+    FZQProductDetailVC *vc = [[FZQProductDetailVC alloc] init];
+    vc.productID = model.productUrl;
+    vc.title = @"商品详情";
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 #pragma mark - Banner delegate
 -(void)bannerView:(GGBannerView *)bannerView didSelectAtIndex:(NSUInteger)index {
-//    if (index < self.vm.model.adInfos.count) {
-//        FZQAdInfos *model = self.vm.model.adInfos[index];
-//        if(model.clickUrl) {
-//            FZQDiscoveryWebViewController *webVC = [[FZQDiscoveryWebViewController alloc] init];
-//            webVC.url = model.clickUrl;
-//            webVC.title = @"网易彩票";
-//            [self.navigationController pushViewController:webVC animated:YES];
-//        }
-//    }
+    if (index < self.vm.header_model.adInfos.count) {
+        FZQAdInfos *model = self.vm.header_model.adInfos[index];
+        if(model.clickUrl) {
+            FZQLotteryWebVC *webVC = [[FZQLotteryWebVC alloc] init];
+            webVC.url = model.clickUrl;
+            webVC.title = @"网易彩票";
+            [self.navigationController pushViewController:webVC animated:YES];
+        }
+    }
 }
 
 #if 0

@@ -10,4 +10,5 @@
 
 @interface FZQLotteryWebVC : UIViewController
 @property (strong, nonatomic) NSString *url;
+
 @end

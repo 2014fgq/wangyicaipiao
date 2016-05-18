@@ -15,4 +15,5 @@
 @property (strong, nonatomic) NSObject *header_model;
 - (void)getLatestDatas;
 - (void)getLatestHeaderDatas;
+- (void)getLatestFooterDatas;
 @end

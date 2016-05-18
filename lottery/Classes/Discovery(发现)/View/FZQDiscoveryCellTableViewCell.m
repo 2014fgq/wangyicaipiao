@@ -23,7 +23,7 @@
         cell = [[FZQDiscoveryCellTableViewCell alloc] initWithReuseIdentifier:ID];
     }
     //设置cell的属性
-
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
@@ -42,7 +42,6 @@
     self.textLabel.text = model.title;
     self.detailTextLabel.text = model.desc;
     self.detailTextLabel.textColor = [UIColor grayColor];
-    self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     //设置弱指针
     __weak typeof(self) weakSelf = self;

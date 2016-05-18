@@ -355,6 +355,18 @@ NSLog(@"[%s]%s is null!", __func__, #pointer);\
 
 #define BACKGROUPCOLOR [UIColor colorWithRed:247/255.0 green:242/255.0 blue:230/255.0 alpha:1]
 
+#define UILAZY(viewname, CLASS) \
+- (CLASS *)viewname\
+{\
+if(!_##viewname)\
+{\
+CLASS *viewname = [[CLASS alloc] init];\
+_##viewname = viewname;\
+[self addSubview:_##viewname];\
+}\
+return _##viewname;\
+}
+
 #endif /* PrefixHeader_pch */
 
 

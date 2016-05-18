@@ -49,14 +49,5 @@
     [self setupAutoHeightWithBottomView:self.imgView bottomMargin:self.h*0.1];
 }
 
-- (UIImageView *)imgView
-{
-    if(!_imgView)
-    {
-        UIImageView *imgView = [[UIImageView alloc] init];
-        _imgView = imgView;
-        [self addSubview:_imgView];
-    }
-    return _imgView;
-}
+UILAZY(imgView, UIImageView)
 @end

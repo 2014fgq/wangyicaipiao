@@ -37,6 +37,8 @@
 		882B29951CB5C7EE0046A903 /* FZQMorePushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B29941CB5C7EE0046A903 /* FZQMorePushViewController.m */; };
 		883A02D51CDB9FDC00EA5873 /* FZQArenaCategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A02D41CDB9FDC00EA5873 /* FZQArenaCategoryVC.m */; };
 		883A02D81CDBC9AB00EA5873 /* FZQArenaCategoryDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A02D71CDBC9AB00EA5873 /* FZQArenaCategoryDetailVC.m */; };
+		883A02DC1CDD00A400EA5873 /* FZQHistoryTableHV.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A02DB1CDD00A400EA5873 /* FZQHistoryTableHV.m */; };
+		883A02DF1CDEB0B500EA5873 /* FZQBaseLotteryTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A02DE1CDEB0B500EA5873 /* FZQBaseLotteryTableVC.m */; };
 		884544B41CB42C98000BBC51 /* FZQMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884544B31CB42C98000BBC51 /* FZQMyLotteryViewController.xib */; };
 		884544BF1CB47E1A000BBC51 /* FZQSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884544BC1CB47E1A000BBC51 /* FZQSettingViewController.m */; };
 		884544C21CB48E06000BBC51 /* FZQGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 884544C11CB48E06000BBC51 /* FZQGroupItem.m */; };
@@ -65,6 +67,10 @@
 		884907BB1CAB06570057F39C /* FZQMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884907BA1CAB06570057F39C /* FZQMenuView.xib */; };
 		884907BE1CAB400E0057F39C /* FZQArenaNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884907BD1CAB400E0057F39C /* FZQArenaNavController.m */; };
 		884907C21CAB4AF10057F39C /* UIImage+FZQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 884907C11CAB4AF10057F39C /* UIImage+FZQExtension.m */; };
+		885113B71CDF9DDB00F3A19F /* FZQProductDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 885113B61CDF9DDB00F3A19F /* FZQProductDetailModel.m */; };
+		885113BA1CDF9E0200F3A19F /* FZQProductDetailVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 885113B91CDF9E0200F3A19F /* FZQProductDetailVM.m */; };
+		886111191CDFA4780095D338 /* FZQProductDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 886111181CDFA4780095D338 /* FZQProductDetailVC.m */; };
+		8861111C1CDFDB470095D338 /* FZQProductDetailVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8861111B1CDFDB470095D338 /* FZQProductDetailVCell.m */; };
 		887CEC8D1CAEF31C00C010FC /* FZQAllLotteryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 887CEC8C1CAEF31C00C010FC /* FZQAllLotteryButton.m */; };
 		887CEC9B1CAF29EB00C010FC /* FZQNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 887CEC9A1CAF29EB00C010FC /* FZQNewFeatureViewController.m */; };
 		887CEC9E1CAF353F00C010FC /* FZQGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 887CEC9D1CAF353F00C010FC /* FZQGuideTool.m */; };
@@ -260,6 +266,10 @@
 		883A02D41CDB9FDC00EA5873 /* FZQArenaCategoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQArenaCategoryVC.m; sourceTree = "<group>"; };
 		883A02D61CDBC9AB00EA5873 /* FZQArenaCategoryDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQArenaCategoryDetailVC.h; sourceTree = "<group>"; };
 		883A02D71CDBC9AB00EA5873 /* FZQArenaCategoryDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQArenaCategoryDetailVC.m; sourceTree = "<group>"; };
+		883A02DA1CDD00A400EA5873 /* FZQHistoryTableHV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQHistoryTableHV.h; sourceTree = "<group>"; };
+		883A02DB1CDD00A400EA5873 /* FZQHistoryTableHV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQHistoryTableHV.m; sourceTree = "<group>"; };
+		883A02DD1CDEB0B500EA5873 /* FZQBaseLotteryTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQBaseLotteryTableVC.h; sourceTree = "<group>"; };
+		883A02DE1CDEB0B500EA5873 /* FZQBaseLotteryTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQBaseLotteryTableVC.m; sourceTree = "<group>"; };
 		884544B31CB42C98000BBC51 /* FZQMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FZQMyLotteryViewController.xib; path = FZQMyLotteryViewController/FZQMyLotteryViewController.xib; sourceTree = "<group>"; };
 		884544BB1CB47E1A000BBC51 /* FZQSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQSettingViewController.h; path = FZQSettingViewController/FZQSettingViewController.h; sourceTree = "<group>"; };
 		884544BC1CB47E1A000BBC51 /* FZQSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQSettingViewController.m; path = FZQSettingViewController/FZQSettingViewController.m; sourceTree = "<group>"; };
@@ -313,6 +323,14 @@
 		884907BD1CAB400E0057F39C /* FZQArenaNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQArenaNavController.m; path = FZQArenaNavController/FZQArenaNavController.m; sourceTree = "<group>"; };
 		884907C01CAB4AF10057F39C /* UIImage+FZQExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+FZQExtension.h"; path = "UIImage+FZQExtension/UIImage+FZQExtension.h"; sourceTree = "<group>"; };
 		884907C11CAB4AF10057F39C /* UIImage+FZQExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FZQExtension.m"; path = "UIImage+FZQExtension/UIImage+FZQExtension.m"; sourceTree = "<group>"; };
+		885113B51CDF9DDB00F3A19F /* FZQProductDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQProductDetailModel.h; sourceTree = "<group>"; };
+		885113B61CDF9DDB00F3A19F /* FZQProductDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQProductDetailModel.m; sourceTree = "<group>"; };
+		885113B81CDF9E0200F3A19F /* FZQProductDetailVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQProductDetailVM.h; sourceTree = "<group>"; };
+		885113B91CDF9E0200F3A19F /* FZQProductDetailVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQProductDetailVM.m; sourceTree = "<group>"; };
+		886111171CDFA4780095D338 /* FZQProductDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQProductDetailVC.h; sourceTree = "<group>"; };
+		886111181CDFA4780095D338 /* FZQProductDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQProductDetailVC.m; sourceTree = "<group>"; };
+		8861111A1CDFDB470095D338 /* FZQProductDetailVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZQProductDetailVCell.h; sourceTree = "<group>"; };
+		8861111B1CDFDB470095D338 /* FZQProductDetailVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZQProductDetailVCell.m; sourceTree = "<group>"; };
 		887CEC8B1CAEF31C00C010FC /* FZQAllLotteryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQAllLotteryButton.h; path = FZQAllLotteryButton/FZQAllLotteryButton.h; sourceTree = "<group>"; };
 		887CEC8C1CAEF31C00C010FC /* FZQAllLotteryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZQAllLotteryButton.m; path = FZQAllLotteryButton/FZQAllLotteryButton.m; sourceTree = "<group>"; };
 		887CEC991CAF29EB00C010FC /* FZQNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZQNewFeatureViewController.h; path = FZQNewFeatureViewController/FZQNewFeatureViewController.h; sourceTree = "<group>"; };
@@ -659,6 +677,17 @@
 			path = FZQRegistTextField;
 			sourceTree = "<group>";
 		};
+		883A02D91CDCF91F00EA5873 /* Product（产品） */ = {
+			isa = PBXGroup;
+			children = (
+				885113B21CDF983100F3A19F /* Controller */,
+				885113B41CDF984F00F3A19F /* Model */,
+				885113B31CDF983E00F3A19F /* View */,
+			);
+			name = "Product（产品）";
+			path = "NewFeature(新特性界面)";
+			sourceTree = "<group>";
+		};
 		884544B81CB47E1A000BBC51 /* Setting(设置） */ = {
 			isa = PBXGroup;
 			children = (
@@ -800,6 +829,35 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		885113B21CDF983100F3A19F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				886111171CDFA4780095D338 /* FZQProductDetailVC.h */,
+				886111181CDFA4780095D338 /* FZQProductDetailVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		885113B31CDF983E00F3A19F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8861111A1CDFDB470095D338 /* FZQProductDetailVCell.h */,
+				8861111B1CDFDB470095D338 /* FZQProductDetailVCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		885113B41CDF984F00F3A19F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				885113B51CDF9DDB00F3A19F /* FZQProductDetailModel.h */,
+				885113B61CDF9DDB00F3A19F /* FZQProductDetailModel.m */,
+				885113B81CDF9E0200F3A19F /* FZQProductDetailVM.h */,
+				885113B91CDF9E0200F3A19F /* FZQProductDetailVM.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		889A808B1CA8F38A0029A97D = {
 			isa = PBXGroup;
 			children = (
@@ -873,6 +931,7 @@
 				889A80DA1CAA02ED0029A97D /* History(开奖信息) */,
 				889A80E21CAA02ED0029A97D /* MyLottery（我的彩票） */,
 				889A80DE1CAA02ED0029A97D /* Main(主要) */,
+				883A02D91CDCF91F00EA5873 /* Product（产品） */,
 				889A80E61CAA02ED0029A97D /* NewFeature(新特性界面) */,
 				889A80EA1CAA02ED0029A97D /* Other(其他） */,
 			);
@@ -975,6 +1034,8 @@
 			children = (
 				882812951CCF310D00A1FCFC /* FZQHistoryTableViewCell.h */,
 				882812961CCF310D00A1FCFC /* FZQHistoryTableViewCell.m */,
+				883A02DA1CDD00A400EA5873 /* FZQHistoryTableHV.h */,
+				883A02DB1CDD00A400EA5873 /* FZQHistoryTableHV.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1435,6 +1496,8 @@
 				8808D4A51CD2BF8F0035DA0B /* FZQLotteryCollectionVCViewController.xib */,
 				8887F1BE1CCEB26600CAB6E5 /* FZQLotteryWebVC.h */,
 				8887F1BF1CCEB26600CAB6E5 /* FZQLotteryWebVC.m */,
+				883A02DD1CDEB0B500EA5873 /* FZQBaseLotteryTableVC.h */,
+				883A02DE1CDEB0B500EA5873 /* FZQBaseLotteryTableVC.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -1715,6 +1778,7 @@
 				88B31F831CCFFE930084298A /* FLEXRuntimeUtility.m in Sources */,
 				88B31F431CCFFE930084298A /* FLEXArgumentInputStructView.m in Sources */,
 				88B31F551CCFFE930084298A /* FLEXTableContentViewController.m in Sources */,
+				886111191CDFA4780095D338 /* FZQProductDetailVC.m in Sources */,
 				88B31F4D1CCFFE930084298A /* FLEXPropertyEditorViewController.m in Sources */,
 				8887F1C01CCEB26600CAB6E5 /* FZQLotteryWebVC.m in Sources */,
 				88B31F861CCFFE930084298A /* FLEXHierarchyTableViewController.m in Sources */,
@@ -1739,10 +1803,12 @@
 				882B293A1CB571720046A903 /* FZQOwl.m in Sources */,
 				88469C711CCDC3AD008997F2 /* FQDebug.m in Sources */,
 				884544C81CB4ACB1000BBC51 /* FZQSwitchItem.m in Sources */,
+				883A02DC1CDD00A400EA5873 /* FZQHistoryTableHV.m in Sources */,
 				88B31F711CCFFE930084298A /* FLEXClassExplorerViewController.m in Sources */,
 				88B31F871CCFFE930084298A /* FLEXImagePreviewViewController.m in Sources */,
 				88B31F7E1CCFFE930084298A /* FLEXHeapEnumerator.m in Sources */,
 				8808D4A21CD2BD270035DA0B /* FZQArenaVM.m in Sources */,
+				885113BA1CDF9E0200F3A19F /* FZQProductDetailVM.m in Sources */,
 				88B31F821CCFFE930084298A /* FLEXResources.m in Sources */,
 				88B31F6C1CCFFE930084298A /* FLEXNetworkTransactionDetailTableViewController.m in Sources */,
 				884907AB1CAAE6E10057F39C /* UIView+Frame.m in Sources */,
@@ -1779,6 +1845,7 @@
 				88B31F731CCFFE930084298A /* FLEXDictionaryExplorerViewController.m in Sources */,
 				889A80F01CAA02ED0029A97D /* AppDelegate.m in Sources */,
 				8808D4C91CDAEE470035DA0B /* FZQArenaCategoryModel.m in Sources */,
+				885113B71CDF9DDB00F3A19F /* FZQProductDetailModel.m in Sources */,
 				88B31F4E1CCFFE930084298A /* FLEXExplorerViewController.m in Sources */,
 				88B31F631CCFFE930084298A /* FLEXSystemLogMessage.m in Sources */,
 				88B31F601CCFFE930084298A /* FLEXLibrariesTableViewController.m in Sources */,
@@ -1800,6 +1867,7 @@
 				88E145981CB4B77100A8A898 /* View+MASAdditions.m in Sources */,
 				88B31F761CCFFE930084298A /* FLEXLayerExplorerViewController.m in Sources */,
 				88B31F791CCFFE930084298A /* FLEXSetExplorerViewController.m in Sources */,
+				883A02DF1CDEB0B500EA5873 /* FZQBaseLotteryTableVC.m in Sources */,
 				88AC4A721CAB6D6F0016D9E2 /* FZQAllLotteryViewController.m in Sources */,
 				88B31F7F1CCFFE930084298A /* FLEXKeyboardHelpViewController.m in Sources */,
 				889A81041CAA1E760029A97D /* UIImage+OriginalImage.m in Sources */,
@@ -1836,6 +1904,7 @@
 				884907C21CAB4AF10057F39C /* UIImage+FZQExtension.m in Sources */,
 				8808D4AB1CD2CE840035DA0B /* FZQLotteryBaseVM.m in Sources */,
 				88B31F441CCFFE930084298A /* FLEXArgumentInputSwitchView.m in Sources */,
+				8861111C1CDFDB470095D338 /* FZQProductDetailVCell.m in Sources */,
 				88B31F3D1CCFFE930084298A /* FLEXArgumentInputFontsPickerView.m in Sources */,
 				88B31F5D1CCFFE930084298A /* FLEXFileBrowserTableViewController.m in Sources */,
 				88469C721CCDC3AD008997F2 /* FQHttpOperation.m in Sources */,

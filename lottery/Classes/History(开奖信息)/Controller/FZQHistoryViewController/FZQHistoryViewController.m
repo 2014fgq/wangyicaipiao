@@ -11,6 +11,8 @@
 #import "FZQHisSettingTableViewController.h"
 #import "MJRefresh.h"
 #import "YYModel.h"
+#import "FZQHistoryTableHV.h"
+
 @implementation FZQHistoryViewController
 
 - (void)viewDidLoad
@@ -20,27 +22,21 @@
     [self initSubView];
     [self initNoti];
     //[self ViewHeaderRefresh];
-    [self.vm getLatestDatas];
 }
 
 - (void)initData
 {
     self.vm = [[FZQHistoryVM alloc] init];
+    [self.vm getLatestDatas];
 }
 
 - (void)initSubView
 {
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 60)];
-    headerView.backgroundColor = BACKGROUPCOLOR;
-    
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 20)];
-    label.text = @"网易彩票累计中奖金额";
-    label.textAlignment = NSTextAlignmentCenter;
-    [headerView addSubview:label];
+    FZQHistoryTableHV *headerView = [[FZQHistoryTableHV alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
     self.tableView.tableHeaderView = headerView;
     //刷新动作
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(ViewHeaderRefresh)];
-    
+
     //右边按钮
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"开奖推送" style:UIBarButtonItemStyleDone target:self action:@selector(settingToPush)];
     self.navigationItem.rightBarButtonItem.tintColor = [UIColor whiteColor];
@@ -107,4 +103,57 @@
 {
     return 60;
 }
+
+#pragma mark - private method
+- (NSString *)datamap:(NSString *)str
+{
+    NSDictionary *dict = @{@"ssq"        : @"双色球",
+                           @""       : @"竞彩篮球",//
+                           @""       : @"快乐扑克",//
+                           @"football_9" : @"胜负彩/任选九",
+                           @"football_sfc" : @"胜负彩/任选九",
+                           @"ssc"        : @"重庆时时彩",
+                           @"qxc"        : @"七星彩",
+                           @""       : @"竞彩足球",//
+                           @"d11"        : @"11选5",
+                           @"gdd11"      : @"粤11选5",
+                           @"jxd11"      : @"老11选5",
+                           @""           : @"重庆11选5",//
+                           @"lnd11"      : @"辽宁11选5",
+                           @"hljd11"     : @"好运11选5",
+                           @"zjd11"      : @"易乐11选5",
+                           @"gxkuai3"    : @"新快3",
+                           @"oldkuai3"   : @"江苏快3",
+                           @"hbkuai3"    : @"湖北快3",
+                           @"kuai3"      : @"快3",
+                           @"ahkuai3"    : @"好运快3",
+                           @"nmgkuai3"   : @"易快3",
+                           @"dlt"        : @"大乐透",
+                           @"x3d"        : @"3D",
+                           @"jxssc"      : @"新时时彩",
+                           @""           : @"足球单场",//
+                           @"kl10"       : @"粤快乐十分",
+                           @""           : @"胜负过关",//
+                           @"kl8"        : @"快乐8",
+                           @"qlc"        : @"七乐彩",
+                           @""           : @"排列5", //
+                           @"pl3"        : @"排列3",
+                           //
+                           @"football_f4cjq" : @"",
+                           @"feiyu"      : @"",
+                           @"football_bqc" : @"",
+                           @"klpk"       : @"",
+                           
+    };
+    
+    if([dict valueForKey:str])
+    {
+        return dict[str];
+    }
+    else
+    {
+        return str;
+    }
+}
+
 @end

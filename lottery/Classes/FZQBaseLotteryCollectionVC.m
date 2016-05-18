@@ -37,14 +37,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     //打开定时器自动滚动
     self.headerview.bannerView.interval = 4;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
     //关闭定时器自动滚动
     self.headerview.bannerView.interval = 0;
 }

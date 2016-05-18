@@ -35,12 +35,12 @@
     
     self.titleLabel.text = self.model.attribute.cardName;
     //self.titleLabel.adjustsFontSizeToFitWidth = true;
-    self.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:15];
+    self.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:16];
     
     self.detailLabel.text = self.model.attribute.cardDesc;
     self.detailLabel.textColor = [UIColor grayColor];
     //self.detailLabel.adjustsFontSizeToFitWidth = true;
-    self.detailLabel.font = [UIFont fontWithName:@"Helvetica" size:10];
+    self.detailLabel.font = [UIFont fontWithName:@"Helvetica" size:13];
     
     
     if([self.model.attribute.activityColor isEqualToString:@"red"])
@@ -63,31 +63,29 @@
 -(void)setup{
     
     // 设置约束
-    CGFloat margin = 10;
-    
+    //imgView的高占比80%
     self.imgView.sd_layout
-    .leftSpaceToView(self,margin)
-    .topSpaceToView(self,margin)
-    .rightSpaceToView(self, self.w*3/4)
-    .heightIs(self.h*3/4);
-//    .maxHeightIs(self.h);
-//    .autoHeightRatio(0);
+    .leftSpaceToView(self, self.w*0.05)
+    .topSpaceToView(self, self.h*0.2)
+    .widthIs(self.w*0.3)
+    .heightIs(self.h*0.6);
     
+    //title的高占比为25%
     self.titleLabel.sd_layout
-    .leftSpaceToView(self.imgView,margin)
+    .leftSpaceToView(self.imgView,self.w*0.05)
     .topEqualToView(self.imgView)
-    .rightSpaceToView(self,margin)
-    //.heightIs(21);
-    .autoHeightRatio(0);
+    .widthIs(self.w*0.6)
+    .heightIs(self.h*0.2);
 //
+    //title的高占比为35%
     self.detailLabel.sd_layout
     .leftEqualToView(self.titleLabel)
-    .topSpaceToView(self.titleLabel, margin)
-    .rightEqualToView(self.titleLabel)
-    .autoHeightRatio(0);
+    .topSpaceToView(self.titleLabel, self.h*0.1)
+    .widthIs(self.w*0.6)
+    .heightIs(self.h*0.25);
     
     //[self setupAutoHeightWithBottomViewsArray:@[_imgView, _detailLabel] bottomMargin:margin];
-    [self setupAutoHeightWithBottomView:self.imgView bottomMargin:margin];
+    [self setupAutoHeightWithBottomView:self.imgView bottomMargin:self.h*0.2];
 }
 
 #pragma mark - 懒加载

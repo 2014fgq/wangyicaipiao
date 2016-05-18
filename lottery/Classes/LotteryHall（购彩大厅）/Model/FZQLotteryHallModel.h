@@ -29,6 +29,7 @@
 @property (strong, nonatomic) UIImage *badgeIcon;
 @property (strong, nonatomic) NSString *cardDesc;
 @property (strong, nonatomic) NSString *cardName;
+@property (strong, nonatomic) NSString *jumpUrl;
 @property (strong, nonatomic) NSString *logo;
 @property (assign, nonatomic) NSInteger *rankMax;
 @property (assign, nonatomic) NSInteger *rankMin;
